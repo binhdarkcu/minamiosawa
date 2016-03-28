@@ -1,0 +1,872 @@
+@charset "utf-8";
+/**
+ * style 
+ * (c) FOURDIGIT Inc.
+ *
+ * 1. import
+ * 2. html, body
+ * 3. HTMLtag, siteCommonClass
+ * 4. Layout
+ * 5. EachPageStyle
+ *
+ */
+/**
+ * 1. import
+ */
+@import "import/reset.css";
+@import "import/util.css";
+@import "../fonts/style.css";
+
+/**
+ * 2. html, body
+ */
+	body {
+		background-color: #fff;
+		background-image: url(../imgs/space.gif);
+		background-repeat: repeat-x;
+		background-position: center top;
+	}
+	.page {
+		color: #333333;
+		font-size: 14px;
+		line-height: 1.5;
+		letter-spacing: 0.1em;
+        /*font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;*/
+		font-family: "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝", serif;
+		min-width: 920px;
+		overflow: hidden;
+	}
+/**
+ * 3. HTMLtag, siteCommonClass
+ */
+/* anchor */
+	a {
+		background-color: transparent;
+		background-image: none;
+		background-repeat: no-repeat;
+		color: #1874b8;
+		text-decoration: underline;
+	}
+	a:visited {}
+	a:hover {
+		color: #1874b8;
+		text-decoration: none;
+	}
+	a:active {}
+
+/* heading */
+    h2 {
+        margin: 20px;
+    }
+    h3 {
+        text-align: left;
+		margin: 0 0 30px 0;
+		padding: 0 0 8px 0;
+		border-bottom: 1px solid #aca8a7;
+	}
+	.cttl {
+		clear: both;
+		margin-bottom: 40px;
+		padding-left: 20px;
+		font-size: 22px;
+		line-height: 1;
+		font-family: "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝", serif;
+		background: url(../imgs/bg-cttl.png) no-repeat 0 50%;
+	}
+	.cttl span {
+		padding-left: 10px;
+		color: #99792a;
+		font-size: 14px;
+		vertical-align: middle;
+	}
+	.section .ttl {
+		font-family: "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝", serif;
+	}
+	.section .dot {
+		background: url(../imgs/bg-ttl-dot.png) repeat-x 0 100%;
+	}
+	.section .dot img {
+		display: inline;
+		padding-right: 7px;
+		background: #fff;
+	}
+	/* color */
+	.tc-gold { color: #99792a;}
+
+/* cap */
+	.cap,
+	.caption {
+		background: none;
+		color: #666666;
+		font-size: 10px;
+		line-height: 15px;
+	}
+	.cap {
+		padding-top: 5px;
+	}
+
+/* nav */
+	.nav img {
+		vertical-align: top;
+	}
+
+/* wrap */
+	.wrap {
+		width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		zoom: 1;
+		clear: both;
+	}
+	.wrap:after { content:"."; display: block; height:0px; clear:both; line-height:0; visibility:hidden; }
+
+/* section */
+	.section {
+		clear: both;
+	}
+
+
+/* カラムレイアウト　clmBox */
+	.clmBox {
+		zoom: 1;
+		clear: both;
+	}
+	.clmBox:after { content:"."; display: block; height:0px; clear:both; line-height:0; visibility:hidden; }
+
+	.clmBox .clm1 { float: left; }
+
+	.clmBox .clm2 { float: right; }
+
+
+	/* カラムリストレイアウト */
+	body .clmList {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	body .clmList ul li {
+		float: left;
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-bottom: 50px;
+	}
+	/* 4カラム */
+	body .clmList.clm4 {
+		margin-left: -16px;
+		margin-right: -16px;
+	}
+	body .clmList.clm4 ul li {
+		width: 226px;
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+	body .clmList.clm4 ul li .photo {
+		width: 226px;
+		overflow: hidden;
+	}
+	body .clmList.clm4 ul li img {
+		width: 100%;
+		/*height: 100%;*/
+	}
+	/* 3カラム */
+	body .clmList.clm3 {
+		margin-left: -16px;
+		margin-right: -16px;
+	}
+	body .clmList.clm3 ul li {
+		width: 312px;
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+	body .clmList.clm3 ul li .photo {
+		width: 312px;
+		overflow: hidden;
+	}
+	body .clmList.clm3 ul li img {
+		width: 100%;
+		/*height: 100%;*/
+	}
+	/* 2カラム */
+	body .clmList.clm2 ul li {
+		width: 484px;
+	}
+
+/**
+ * 4. Layout
+ */
+
+ /* gHeader */
+	body #gHeader {
+		width: 100%;
+		background-color: #fff;
+	}
+	body #gHeader #hdrLogoArea {
+		float: left;
+		padding: 15px 0;
+	}
+	body #gHeader #hdrLogoArea .siteTitle {
+		float: left;
+	}
+	body #gHeader #hdrLogoArea .siteTitle img {
+		width: 85px;
+	}
+	body #gHeader #hdrLogoArea .LogoTxt {
+		float: left;
+		margin-left: 18px;
+	}
+	body #gHeader #hdrLogoArea .shldrTxt {
+		margin-bottom: 15px;
+		font-size: 10px;
+		line-height: 15px;
+		color: #000000;
+	}
+	body #gHeader #hdrLogoArea .siteTitleTxt img {
+		width: 228px;
+	}
+	body #gHeader #menuNav,
+	body #gHeader #spNav {
+ 		display: none;
+ 	}
+ 	body #gHeader #hNavReq,
+ 	body #gHeader #hNavInfo {
+ 		display: none;
+ 	}
+
+    /* 来場予約 非表示 */
+    body #gHeader #pNav ul li.btRes {
+        display: none;
+    }
+
+	body #gHeader #pNav {
+		float: right;
+	}
+	body #gHeader #pNav ul li {
+		float: left;
+		padding-top: 36px;
+		margin-right: 15px;
+		font-family: "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝", serif;
+	}
+	body #gHeader #pNav ul li.btReq,
+	body #gHeader #pNav ul li.btRes {
+		padding-top: 0;
+		margin-right: 0;
+	}
+	body #gHeader #pNav ul li.btReq a,
+	body #gHeader #pNav ul li.btRes a {
+		display: table;
+		text-align: center;
+		font-size: 15px;
+		text-decoration: none;
+		width: 110px;
+		height: 86px;
+		box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box;
+	}
+	body #gHeader #pNav ul li.btReq a,
+	body #gHeader #pNav ul li.btRes a {
+		display: table-cell;
+		vertical-align: middle;
+		/* transition */
+		-webkit-transition: background .3s;
+		transition: background .3s;
+	}
+	body #gHeader #pNav ul li.btReq a {
+        background-color: #d9e480;
+        color: #32833a;
+	}
+	body #gHeader #pNav ul li.btRes a {
+        background-color: #32833a;
+        color: #fff;
+	}
+	body #gHeader #pNav ul li.btReq a:hover {
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+        -ms-filter: "alpha(opacity=70)";
+        -khtml-opacity: 0.7;
+        -moz-opacity: 0.7;
+	}
+	body #gHeader #pNav ul li.btRes a:hover {
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+        -ms-filter: "alpha(opacity=70)";
+        -khtml-opacity: 0.7;
+        -moz-opacity: 0.7;
+	}
+
+	body #gHeader #gNav {
+		clear: both;
+		background-image: url(../imgs/bg-gnav.jpg);
+		background-color: transparent;
+		background-repeat: repeat-x;
+		background-position: left top;
+        height: 56px;
+	}
+body #gHeader #gNav ul {
+    width: 1002px;
+}
+	body #gHeader #gNav ul li {
+		float: left;
+		box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box;
+	}
+	body #gHeader #gNav ul li a {
+		display: block;
+        height: 52px;
+        background-image: url(../imgs/gnav.jpg);
+		background-color: transparent;
+		background-repeat: no-repeat;
+		/* transition */
+		/* -webkit-transition: background-position .3s;
+		transition:  background-position .3s; */
+	}
+    body #gHeader #gNav ul li a#gnav01 {
+        width: 102px;
+        background-position: 0 0;
+    }
+    body #gHeader #gNav ul li a#gnav02,
+    body #gHeader #gNav ul li a#gnav03,
+    body #gHeader #gNav ul li a#gnav04,
+    body #gHeader #gNav ul li a#gnav05,
+    body #gHeader #gNav ul li a#gnav06,
+    body #gHeader #gNav ul li a#gnav07,
+    body #gHeader #gNav ul li a#gnav08,
+    body #gHeader #gNav ul li a#gnav09,
+    body #gHeader #gNav ul li a#gnav10 {
+        width: 100px;
+    }
+    body #gHeader #gNav ul li a#gnav02 {
+        background-position: -102px 0;
+    }
+    body #gHeader #gNav ul li a#gnav03 {
+        background-position: -202px 0;
+    }
+    body #gHeader #gNav ul li a#gnav04 {
+        background-position: -302px 0;
+    }
+    body #gHeader #gNav ul li a#gnav05 {
+        background-position: -402px  0;
+    }
+    body #gHeader #gNav ul li a#gnav06 {
+        background-position: -502px 0;
+    }
+    body #gHeader #gNav ul li a#gnav07 {
+        background-position: -602px 0;
+    }
+    body #gHeader #gNav ul li a#gnav08 {
+        background-position: -702px 0;
+    }
+    body #gHeader #gNav ul li a#gnav09 {
+        background-position: -802px 0;
+    }
+    body #gHeader #gNav ul li a#gnav10 {
+        background-position: -902px 0;
+    }
+
+body #gHeader #gNav ul li a#gnav01:hover,
+body #pageID01 #gHeader #gNav ul li a#gnav01 {
+    background-position: 0 -57px;
+}
+body #gHeader #gNav ul li a#gnav02:hover,
+body #pageID02 #gHeader #gNav ul li a#gnav02 {
+    background-position: -102px -57px;
+}
+body #gHeader #gNav ul li a#gnav03:hover,
+body #pageID03 #gHeader #gNav ul li a#gnav03 {
+    background-position: -202px -57px;
+}
+body #gHeader #gNav ul li a#gnav04:hover,
+body #pageID04 #gHeader #gNav ul li a#gnav04 {
+    background-position: -302px -57px;
+}
+body #gHeader #gNav ul li a#gnav05:hover,
+body #pageID05 #gHeader #gNav ul li a#gnav05 {
+    background-position: -402px  -57px;
+}
+body #gHeader #gNav ul li a#gnav06:hover,
+body #pageID06 #gHeader #gNav ul li a#gnav06 {
+    background-position: -502px -57px;
+}
+body #gHeader #gNav ul li a#gnav07:hover,
+body #pageID07 #gHeader #gNav ul li a#gnav07 {
+    background-position: -602px -57px;
+}
+body #gHeader #gNav ul li a#gnav08:hover,
+body #pageID08 #gHeader #gNav ul li a#gnav08 {
+    background-position: -702px -57px;
+}
+body #gHeader #gNav ul li a#gnav09:hover,
+body #pageID09 #gHeader #gNav ul li a#gnav09 {
+    background-position: -802px -57px;
+}
+body #gHeader #gNav ul li a#gnav10:hover,
+body #pageID10 #gHeader #gNav ul li a#gnav10 {
+    background-position: -902px -57px;
+}
+body #gHeader #gNav ul li.off a#gnav01 {
+    background-position: 0 -114px;
+}
+body #gHeader #gNav ul li.off a#gnav02 {
+    background-position: -102px -114px;
+}
+body #gHeader #gNav ul li.off a#gnav03 {
+    background-position: -202px -114px;
+}
+body #gHeader #gNav ul li.off a#gnav04 {
+    background-position: -302px -114px;
+}
+body #gHeader #gNav ul li.off a#gnav05 {
+    background-position: -402px  -114px;
+}
+body #gHeader #gNav ul li.off a#gnav06 {
+    background-position: -502px -114px;
+}
+body #gHeader #gNav ul li.off a#gnav07 {
+    background-position: -602px -114px;
+}
+body #gHeader #gNav ul li.off a#gnav08 {
+    background-position: -702px -114px;
+}
+body #gHeader #gNav ul li.off a#gnav09 {
+    background-position: -802px -114px;
+}
+body #gHeader #gNav ul li.off a#gnav10 {
+    background-position: -902px -114px;
+}
+body #gHeader #gNav ul li.off a,
+body #pageID01 #gHeader #gNav ul li a#gnav01,
+body #pageID02 #gHeader #gNav ul li a#gnav02,
+body #pageID03 #gHeader #gNav ul li a#gnav03,
+body #pageID04 #gHeader #gNav ul li a#gnav04,
+body #pageID05 #gHeader #gNav ul li a#gnav05,
+body #pageID06 #gHeader #gNav ul li a#gnav06,
+body #pageID07 #gHeader #gNav ul li a#gnav07,
+body #pageID08 #gHeader #gNav ul li a#gnav08,
+body #pageID09 #gHeader #gNav ul li a#gnav09,
+body #pageID10 #gHeader #gNav ul li a#gnav10 {
+    cursor: default;
+    pointer-events: none;
+}
+
+	body #gHeader #gNav ul li span {
+		display: none;
+	}
+	body #gHeader #gNav ul li.navOut {
+		display: none;
+	}
+
+/* container */
+	body #container {
+		clear: both;
+		padding-top: 20px;
+		background: url(../imgs/bg-container.png) repeat-x 50% 0;
+	}
+
+/* pankuzu */
+	body .pankuzu {
+		float: right;
+		font-size: 10px;
+		line-height: 15px;
+	}
+
+
+/* CVArea */
+/* 来場予約非表示 */
+body #CVArea ul {
+    width: 484px;
+    margin: 0 auto;
+}
+body #CVArea ul li.btRes {
+    display: none;
+}
+/* /ここまで//来場予約非表示 */
+
+	body #CVArea {
+		clear: both;
+		background-color: #ede9e4;
+		padding: 45px 0;
+		margin-bottom: 80px;
+	}
+	body #CVArea ul li {
+		border: 1px solid #e1ddd8;
+		border-radius: 2px;
+		-webkit-border-radius: 2px;
+		width: 484px;
+		background-color: #fff;
+		padding: 20px 60px;
+		font-size: 10px;
+		line-height: 15px;
+		text-align: center;
+		box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box;
+	}
+	body #CVArea ul li .btn {
+		margin-bottom: 20px;
+	}
+	body #CVArea ul li .btn a {
+		width: 100%;
+		padding: 30px 20px;
+		display: inline-block;
+		text-align: center;
+		color: #fff;
+		font-size: 20px;
+		text-decoration: none;
+		font-family: "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝", serif;
+		box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box;
+		/* transition */
+		-webkit-transition: background .3s;
+		transition: background .3s;
+	}
+	body #CVArea ul li h3 {
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 20px;
+		font-family: "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝", serif;
+	}
+
+	body #CVArea ul li.btReq {
+		float: left;
+	}
+	body #CVArea ul li.btReq h3 span {
+		color: #897744;
+	}
+	body #CVArea ul li.btRes {
+		float: right;
+	}
+	body #CVArea ul li.btRes h3 span {
+		color: #7e4544;
+	}
+	
+
+	body #CVArea ul li .btn a {
+		position: relative;
+	}
+	body #CVArea ul li .btn a span {
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		margin-top: -10px;
+	}
+
+	body #CVArea ul li.btReq .btn a {
+        background-color: #d9e480;
+        color: #32833a;
+	}
+	body #CVArea ul li.btReq .btn a:hover {
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+        -ms-filter: "alpha(opacity=70)";
+        -khtml-opacity: 0.7;
+        -moz-opacity: 0.7;
+	}
+
+	body #CVArea ul li.btRes .btn a {
+        background-color: #32833a;
+        color: #fff;
+	}
+	body #CVArea ul li.btRes .btn a:hover {
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+        -ms-filter: "alpha(opacity=70)";
+        -khtml-opacity: 0.7;
+        -moz-opacity: 0.7;
+	}
+
+/* mainArea */
+	.mainArea {
+		background: #ccc;
+	}
+
+/* snav */
+	.snav ul {
+		margin: 0 auto;
+		text-align: center;
+	}
+	.snav li {
+		display: inline;
+		border-right: 1px #fff solid;
+	}
+	.snav li:last-child {
+		border-right: none;
+	}
+	.snav li a {
+		display: inline-block;
+		padding: 12px 20px;
+		color: #fff;
+		text-decoration: none;
+		font-family: "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝", serif;
+		border-top: 1px #7c6950 solid;
+		border-bottom: 1px #fff solid;
+		background: #7c6950;
+	}
+	.snav li a:hover,
+	.snav li.on a {
+		background: #a49685;
+	}
+	
+/* gFooter */
+	body #gFooter {
+		clear: both;
+	}
+	body #gFooter #fNav {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	body #gFooter #fNav .wrap {
+		position: relative;
+	}
+	body #gFooter #fNav ul li {
+		display: inline-block;
+		margin-left: 1%;
+		margin-right: 1%;
+		font-size: 12px;
+	}
+	body #gFooter #fNav ul li a {
+		text-decoration: none;
+		color: #333;
+	}
+	body #gFooter #fNav ul li a:hover {
+		color: #6fa875;
+	}
+	body #pageID01 #gFooter #fNav ul li#fnav01 a,
+	body #pageID02 #gFooter #fNav ul li#fnav02 a,
+	body #pageID03 #gFooter #fNav ul li#fnav03 a,
+	body #pageID04 #gFooter #fNav ul li#fnav04 a,
+	body #pageID05 #gFooter #fNav ul li#fnav05 a,
+	body #pageID06 #gFooter #fNav ul li#fnav06 a,
+	body #pageID07 #gFooter #fNav ul li#fnav07 a,
+	body #pageID08 #gFooter #fNav ul li#fnav08 a,
+	body #pageID09 #gFooter #fNav ul li#fnav09 a,
+	body #pageID010 #gFooter #fNav ul li#fnav10 a {
+		color: #6fa875 !important;
+		cursor: default;
+		pointer-events: none;
+	}
+	body #gFooter #fNav ul li.off {
+		color: #999 !important;
+		cursor: default;
+		pointer-events: none;
+	}
+	body #gFooter .btMap {
+		position: absolute;
+		top: 90px;
+		right: 0;
+	}
+	body #gFooter .btMap a {
+		display: inline-block;
+		background-image: url(../imgs/icon-map.png);
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: 15px 50%;
+		background-color: #fff;
+		border: 1px solid #866e1c;
+		padding: 10px 13px 10px 45px;
+		color: #866e1c;
+		font-family: "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝", serif;
+		text-align: center;
+		text-decoration: none;
+		box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box;
+		/* transition */
+		-webkit-transition: .3s;
+		transition: .3s;
+	}
+	body #gFooter .btMap a:hover {
+		background-image: url(../imgs/icon-map_ov.png);
+		background-color: #866e1c;
+		border: 1px solid #fff;
+		color: #fff;
+	}
+
+	body #gFooter #contactArea {
+		position: relative;
+		background-color: #666;
+		padding: 30px 0;
+		color: #fff;
+	}
+	body #gFooter #contactArea .wrap {
+		position: relative;
+	}
+	body #gFooter #contactArea .txt01 {
+		margin-bottom: 10px;
+	}
+	body #gFooter #contactArea .telnum {
+		font-size: 30px;
+		line-height: 30px;
+		float: left;
+	}
+	body #gFooter #contactArea .telnum a {
+		display: none;
+	}
+	body #gFooter #contactArea .telnum span.icon {
+
+	}
+	body #gFooter .btPagetop {
+		position:  absolute;
+		bottom: -18px;
+		right: 20px;
+	}
+	body #gFooter .btPagetop a {
+		display: block;
+		padding: 10px 7px;
+		background:  rgba(0,0,0,0.5);
+	}
+	body #gFooter .btPagetop a:hover {
+		background:  rgba(0,0,0,0.8);
+	}
+
+	body #gFooter #contactArea .telnum span.icon:before {
+		content: "";
+		background-image: url(../imgs/icon-tel.png);
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: left top;
+		display: inline-block;
+		width: 31px;
+		height: 19px;
+		margin-right: 15px;
+	}
+	body #gFooter #contactArea .telnum span.txt02 {
+		display: inline-block;
+		vertical-align: top;
+		font-size: 10px;
+		line-height: 15px;
+		margin-left: 17px;
+	}
+	body #gFooter #contactArea .btMap {
+		position: absolute;
+		top: 20px;
+		right: 0;
+		border: 1px #866e1c solid;
+	}
+	body #gFooter #contactArea .btMap a {
+		border: 1px #fff solid;
+		display: block;
+		background-color: #f7f7f1;
+		color: #866e1c;
+		font-size: 16px;
+		line-height: 16px;
+		text-decoration: none;
+		padding: 12px 20px 10px 40px;
+		font-family: "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝", serif;
+	}
+
+	body #gFooter #LeafiaArea {
+		clear: both;
+		background-color: #e6e6e6;
+		padding: 40px 0 50px;
+	}
+	body #gFooter #LeafiaArea h3 {
+		background-color: #333;
+		color: #fff;
+		font-family: "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝", serif;
+		padding: 10px 15px;
+		margin-bottom: 15px;
+	}
+	body #gFooter #LeafiaArea h3 span {
+		color: #ffe69b;
+	}
+	body #gFooter #LeafiaArea h3 span.icon-mynas,
+	body #gFooter #LeafiaArea h3 span.icon-plus {
+		display: none;
+	}
+	body #gFooter #LeafiaArea .list {
+		margin-left: -16px;
+		margin-right: -16px;
+		margin-bottom: 50px;
+	}
+	body #gFooter #LeafiaArea .list ul li {
+		cursor: pointer;
+		display: table;
+		float: left;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		padding: 4px;
+		width: 484px;
+		margin-left: 16px;
+		margin-right: 16px;
+		color: #1874b8;
+		box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box;
+	}
+	body #gFooter #LeafiaArea .list ul li .photo {
+		width: 207px;
+		/* transition */
+		-webkit-transition: opacity .3s;
+		transition: opacity .3s;
+	}
+	body #gFooter #LeafiaArea .list ul li:hover .photo {
+		opacity: 0.7;
+	}
+	body #gFooter #LeafiaArea .list ul li .bukkenName {
+		width: 200px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	body #gFooter #LeafiaArea .list3clm {
+		clear: both;
+	}
+	body #gFooter #LeafiaArea .list3clm {
+		margin-left: -16px;
+		margin-right: -16px;
+	}
+	body #gFooter #LeafiaArea .list3clm ul li {
+		float: left;
+		width: 312px;
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+	body #gFooter #LeafiaArea .list3clm ul li p {
+		font-size: 12px;
+		line-height: 18px;
+		letter-spacing: 0;
+	}
+	body #gFooter #LeafiaArea .list3clm ul li strong {
+		color: #ff0000;
+		font-weight: normal;
+	}
+
+	body #gFooter #copyrightArea {
+		clear: both;
+		border-top: 1px solid #ccc;
+		padding: 20px 0;
+	}
+	body #gFooter #copyrightArea .logoList {
+		float: left;
+	}
+	body #gFooter #copyrightArea .logoList ul li p {
+		float: left;
+	}
+	body #gFooter #copyrightArea .logoList ul li p.txt {
+		margin-left: 40px;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	body #gFooter #copyrightArea .logoList ul li p.txt span {
+		font-size: 10px;
+	}
+
+	body #gFooter #copyrightArea .copyrightNav {
+		float: right;
+	}
+	body #gFooter #copyrightArea .copyrightNav ul li {
+		text-align: right;
+		font-size: 12px;
+		line-height: 18px;
+		margin-bottom: 5px;
+	}
+
+
+	/* printNav */
+	body .printNav {
+		text-align: center;
+	}
+	body .printNav ul li {
+		display: inline-block;
+	}
+	body .printNav ul li a {
+		background-color: #888;
+		padding: 10px 17px;
+		display: inline-block;
+		/* transition */
+		-webkit-transition: background .3s;
+		transition: background .3s;
+	}
+	body .printNav ul li a:hover {
+		background-color: #999;
+	}

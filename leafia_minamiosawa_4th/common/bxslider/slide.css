@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bxslider img {
+	width: 100%;
+}
+
+.bx-wrapper {
+	position:  relative;
+}
+.bx-controls-direction {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 100;
+	text-indent: -9999px;
+	z-index: 9999;
+	outline: 0;
+	width: 100%;
+	height:  80px;
+	margin-top: -40px;
+	padding: 0 35px;
+	box-sizing: border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box;
+}
+@media only screen and (max-width:600px) {
+.bx-controls-direction {
+	padding: 0;
+}
+}
+.bx-prev{
+	display: block;
+	float: left;
+	background: url(../../imgs/bt-prev.png) no-repeat 0 top;
+	height: 80px;
+	width: 35px;
+}
+.bx-next{
+	display: block;
+	float: right;
+	background: url(../../imgs/bt-next.png) no-repeat 0 top;
+	height: 80px;
+	width: 35px;
+}
+.bx-prev:hover,
+.bx-next:hover{
+	opacity: 0.7;
+}

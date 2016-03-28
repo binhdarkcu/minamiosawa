@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" dir="ltr">
+<head profile="http://purl.org/net/ns/metaprof"> 
+<!-- meta -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta name="Keywords" content="{keywords}" />
+	<meta name="Description" content="{description}{name_article}の公式ホームページです。" />
+<!-- title -->
+	<title>{$pageTitle$}｜{seotxt}｜小田急不動産 {name_article}【公式HP】</title>
+<!-- link -->
+	<link rel="start" href="/" title="ホーム" /> 
+	<link rel="stylesheet" type="text/css" media="all" href="../common/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="../common/css/responsive.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+<!-- js -->
+	<script type="text/javascript" src="../common/js/jquery.js" id="jqueryJS" charset="UTF-8"></script>
+	<script type="text/javascript" src="../common/js/util.js" id="utilJS" charset="UTF-8"></script>
+	<script type="text/javascript" src="../common/js/main.js" id="mainJS" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/index.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="../common/parts/parts.js" charset="UTF-8"></script>
+<!-- init -->
+	<link rel="stylesheet" type="text/css" href="../common/css/import/accessibility.css" media="screen" id="noscriptCSS" />
+	<script type="text/javascript" charset="UTF-8" src="../common/js/init.js" id="InitJS"></script>
+<!-- flatHeightAll -->
+	<script type="text/javascript" src="../common/js/jquery.flatHeightAll.min.js" id="flJS" charset="UTF-8"></script>
+<!-- TweenMax -->
+	<script src="../common/js/tweenmax.min.js"></script>
+</head>
+<body class="base">
+<div class="page" id="pageID">
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div id="gHeader" class="header">
+<div class="nav" id="accessibilityNav">
+<ul>
+<li><a href="#mainContent">コンテンツへ</a></li>
+<li><a href="#gNav">ナビゲーションへ</a></li>
+</ul>
+</div><!-- / #accessibilityNav -->
+<div class="wrap">
+<div id="hdrLogoArea" class="clearfix">
+<p class="siteTitle"><a href="../index.html"><img src="../common/imgs/hdr-logo.png" alt="{seotxt}｜小田急不動産 {name_article}【公式HP】"></a></p>
+<div class="LogoTxt">
+<h1 class="shldrTxt">{seotxt}｜小田急不動産 {name_article}【公式HP】</h1>
+<p class="siteTitleTxt"><img src="../common/imgs/hdr-logotxt.png" alt="{seotxt}｜小田急不動産 {name_article}【公式HP】"></p>
+</div><!-- / .LogoTxt -->
+<div id="menuNav" class="nav">
+<div id="spPull"><span class="icon-menu"></span><span class="infoTxt">メニュー</span><span class="hdrClose icon-close">閉じる</span></div>
+</div><!-- / #menuNav -->
+</div><!-- / #hdrLogoArea -->
+<div id="pNav" class="nav clearfix">
+<ul class="ahoverArea">
+<li class="btMap"><a href="../map/index.html"><img src="../common/imgs/hdr-map.png" alt=""></a></li>
+<li class="btOut"><a href="../misc_redirect/outline.html" target="_blank"><img src="../common/imgs/hdr-outline.png" alt=""></a></li>
+<li class="btReq"><a href="../misc_redirect/request.html" target="_blank"><span>資料請求</span></a></li>
+<li class="btRes"><a href="../misc_redirect/reserve.html" target="_blank"><span>来場予約</span></a></li>
+</ul>
+</div><!-- / #pNav -->
+</div><!-- / .wrap -->
+<div id="spNav" class="nav clearfix">
+<ul>
+<li id="spMap"><a href="../map/index.html"><span class="icon-map"></span>現地案内図</a></li>
+<li id="spInfo"><span class="icon-info"></span><span class="infoTxt">インフォ<br />メーション</span><span class="hdrClose icon-close">閉じる</span></li>
+<li id="spOut"><a href="../misc_redirect/outline.html"><span class="icon-note"></span>物件概要</a></li>
+<li id="spReq"><span class="icon-mail"></span><span class="infoTxt">資料請求</span><span class="hdrClose icon-close">閉じる</span></li>
+<li id="spTel"><a href="tel:0120092177" target="_blank"><span class="icon-tel"></span>お問い合わせ</a></li>
+</ul>
+</div><!-- / #spNav -->
+<div class="spInner">
+<div id="hNavReq" class="nav clearfix">
+<ul>
+<li id="btReq"><a href="../misc_redirect/request.html" target="_blank"><img src="../common/imgs/bt-sprequest.png"></a></li>
+<li id="btRes"><a href="../misc_redirect/reserve.html" target="_blank"><img src="../common/imgs/bt-spreserve.png"></a></li>
+</ul>
+</div><!-- / #hNavReq -->
+
+<div id="hNavInfo">
+<h3><img src="../common/imgs/h-spinfo.png" alt="INFORMATION"></h3>
+<div class="frameBox">
+{HOMEMIX_INFORMATION}
+</div><!-- / #frameBox -->
+</div><!-- / #hNavInfo -->
+
+<div id="gNav" class="nav">
+<div class="wrap clearfix">
+<ul class="clearfix">
+<li><a href="#"><img src="../common/imgs/gnav-01.png" alt="aaa"><span>aaa</span></a></li>
+<li class="on"><a href="#"><img src="../common/imgs/gnav-02.png" alt="aaa"><span>aaa</span></a></li>
+<li><a href="#"><img src="../common/imgs/gnav-03.png" alt="aaa"><span>aaa</span></a></li>
+<li class="off"><a href="#"><img src="../common/imgs/gnav-04.png" alt="aaa"><span>aaa</span></a></li>
+<li><a href="#"><img src="../common/imgs/gnav-05.png" alt="aaa"><span>aaa</span></a></li>
+<li><a href="#"><img src="../common/imgs/gnav-06.png" alt="aaa"><span>aaa</span></a></li>
+<li><a href="#"><img src="../common/imgs/gnav-07.png" alt="aaa"><span>aaa</span></a></li>
+<li><a href="#"><img src="../common/imgs/gnav-08.png" alt="aaa"><span>aaa</span></a></li>
+<li class="navOut"><a href="#" target="_blank" class="blank"><span>aaa</span></a></li>
+</ul>
+</div><!-- / .wrap -->
+</div><!-- / #gNav -->
+</div><!-- / .spInner -->
+</div><!-- / #header -->
+<div id="container">
+<div id="mainContent" class="article">
+<div class="wrap">
+<p class="pankuzu"><a href="../index.html">「{name_article}」トップ</a> &gt <strong>{$pageTitle$}</strong></p>
+<h2 class="cttl">{$pageTitle$}<span>TEMPLATE</span></h2>
+<div class="section mb30">
+<h4 class="ttl ac font30">大見出しが入ります。大見出しが入ります。</h4>
+</div>
+</div>
+<div class="section mainArea mb60">
+<div class="wrap">
+<div style="padding:200px 0;">
+<p class="ttl ac font20">下層メインイメージが入ります。</p>
+</div>
+</div>
+</div>
+<div class="wrap">
+<div class="section">
+<div class="snav mb45">
+<ul>
+<li class="on"><a href="#">サブナビ</a></li><li><a href="#">サブナビ</a></li><li><a href="#">サブナビ</a></li><li><a href="#">サブナビ</a></li><li><a href="#">サブナビ</a></li><li><a href="#">サブナビ</a></li>
+</ul>
+</div>
+<p class="mb20 dot"><img src="imgs/ttl-01.png" alt="" /></p>
+<p class="mb50"><img src="imgs/img-dummy.jpg" alt=""></p>
+<div class="clmList clm2">
+<ul class="clearfix nav">
+<li>
+<p class="photo mb15"><img src="imgs/img-co02.jpg" alt=""></p>
+<h4 class="ttl font16 tc-gold">小見出し</h4>
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</li>
+<li>
+<p class="photo mb15"><img src="imgs/img-co02.jpg" alt=""></p>
+<h4 class="ttl font16 tc-gold">小見出し</h4>
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</li>
+</ul>
+</div><!-- / .clmList.2clm -->
+</div><!-- / .section -->
+<div class="section">
+<div class="clmList clm3">
+<ul class="clearfix nav">
+<li>
+<p class="photo mb15"><img src="imgs/img-co03.jpg" alt=""></p>
+<h4 class="ttl font16 tc-gold">小見出し</h4>
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</li>
+<li>
+<p class="photo mb15"><img src="imgs/img-co03.jpg" alt=""></p>
+<h4 class="ttl font16 tc-gold">小見出し</h4>
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</li>
+<li>
+<p class="photo mb15"><img src="imgs/img-co03.jpg" alt=""></p>
+<h4 class="ttl font16 tc-gold">小見出し</h4>
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</li>
+</ul>
+</div><!-- / .clmList.3clm -->
+</div><!-- / .section -->
+<div class="section mb40">
+<div class="clmList clm4">
+<ul class="clearfix nav">
+<li>
+<p class="photo mb15"><img src="imgs/img-co04.jpg" alt=""></p>
+<h4 class="ttl font16 tc-gold">小見出し</h4>
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</li>
+<li>
+<p class="photo mb15"><img src="imgs/img-co04.jpg" alt=""></p>
+<h4 class="ttl font16 tc-gold">小見出し</h4>
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</li>
+<li>
+<p class="photo mb15"><img src="imgs/img-co04.jpg" alt=""></p>
+<h4 class="ttl font16 tc-gold">小見出し</h4>
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</li>
+<li>
+<p class="photo mb15"><img src="imgs/img-co04.jpg" alt=""></p>
+<h4 class="ttl font16 tc-gold">小見出し</h4>
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</li>
+</ul>
+</div><!-- / .clmList.4clm -->
+</div><!-- / .section -->
+<div class="section mb30">
+<p class="mb20"><img src="imgs/ttl-02.png" alt="" /></p>
+<p><img src="imgs/img-co01.jpg" alt=""></p>
+<p class="cap ar mb40">外観完成予想図</p>
+<div class="clmList clm2">
+<ul class="clearfix nav">
+<li>
+<h4 class="ttl font22 mb15">見出しが入ります。見出しが入ります。</h4>
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</li>
+<li>
+<h4 class="ttl font22 mb15">見出しが入ります。見出しが入ります。</h4>
+<p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+</li>
+</ul>
+</div><!-- / .clmList.2clm -->
+<p class="caption clear">注釈が入ります。ダミーテキストです。注釈が入ります。ダミーテキストです。注釈が入ります。ダミーテキストです。注釈が入ります。ダミーテキストです。注釈が入ります。ダミーテキストです。注釈が入ります。ダミーテキストです。注釈が入ります。ダミーテキストです。注釈が入ります。ダミーテキストです。注釈が入ります。ダミーテキストです。注釈が入ります。ダミーテキストです。注釈が入ります。ダミーテキストです。注釈が入ります。ダミーテキストです。</p>
+</div><!-- / .section -->
+</div><!-- / .wrap -->
+<div id="CVArea">
+<div class="wrap">
+<ul class="clearfix nav">
+<li class="btReq">
+<h3>当物件の詳しい資料を<span>無料</span>で</h3>
+<p class="btn"><a href="../misc_redirect/request.html" target="_blank">資料請求はこちら<span class="icon-next"></span></a></p>
+<p>詳しい資料をご送付いたします。<br />
+ご家族お揃いで見る際にお役立てください。</p>
+</li>
+<li class="btRes">
+<h3>ご予約いただいた方は<span>優先</span>でご案内します。</h3>
+<p class="btn"><a href="../misc_redirect/reserve.html" target="_blank">来場予約はこちら<span class="icon-next"></span></a></p>
+</li>
+</ul>
+</div><!-- / .wrap -->
+</div><!-- / #CVArea -->
+</div><!-- / #article -->
+</div><!-- / #container -->
+<div id="gFooter" class="footer">
+<div id="fNav" class="nav">
+<div class="wrap">
+<ul>
+<li><a href="#">フッターナビ.1</a></li>
+<li class="on"><a href="#">フッターナビ.2</a></li>
+<li><a href="#">フッターナビ.3</a></li>
+<li><a href="#">フッターナビ.4</a></li>
+<li class="off"><a href="#">フッターナビ.5</a></li>
+<li><a href="#">フッターナビ.6</a></li>
+<li class="last"><a href="#">フッターナビ.7</a></li>
+</ul>
+<p class="btMap"><a href="../map/index.html">現地案内図はこちら</a></p>
+</div><!-- / .wrap -->
+</div><!-- / #fNav -->
+<div id="FOOTER"></div>
+</div><!-- / #footer -->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////// -->
+</div><!-- / .page -->
+<noscript>
+<div class="noscript" id="noscript">
+<div class="content">
+当サイトを最適な状態で閲覧していただくにはブラウザの<span>JavaScriptを有効</span>にしてご利用下さい。<br />
+JavaScriptを無効のままご覧いただいた場合には一部機能がご利用頂けない場合や正しい情報を取得できない場合がございます。
+</div>
+</div><!-- / #noscript -->
+</noscript>
+<div id="logtag">
+</div><!-- / #logtag -->
+</body>
+</html>
