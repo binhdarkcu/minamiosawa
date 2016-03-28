@@ -1,0 +1,155 @@
+#slider {
+	position: relative;
+	width: 800px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+/*boot strap対応*/
+#slider .slider  {
+	margin:0!important;
+	height: 570px;
+	overflow: hidden;
+	z-index: auto;
+	width: 800px;
+}
+
+.bx-next {
+	top: 40%;
+	right: -40px;
+}
+
+.bx-prev {
+	top: 40%;
+	left: -40px;
+	background-position:-432px -72px;
+}
+.bx-prev  {
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	margin-top: 1px;
+
+
+
+  *margin-right: .3em;
+	line-height: 14px;
+	vertical-align: text-top;
+	text-indent: -9999px;
+	background: url(../../images/model/btn_previous.jpg) no-repeat;
+}
+.bx-next  {
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	margin-top: 1px;
+
+  *margin-right: .3em;
+	line-height: 14px;
+	vertical-align: text-top;
+	text-indent: -9999px;
+	background: url(../../images/model/btn_next.jpg) no-repeat;
+}
+
+.bg_img {
+	width: 800px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/*隙間を無効化してから隙間を設定する*/
+.bx-pager {
+	overflow: hidden;
+	z-index: auto;
+	width: 800px;
+	margin: 0px;
+	padding: 0px;
+}
+.bx-pager ul{
+	width: 805px;
+	z-index: auto;
+	margin: 0;
+	padding: 0px;
+}
+.bx-pager ul li{
+	float: left;
+	margin-right: 4px;
+	width: 130px;
+
+}
+.bx-pager ul li.odd{
+	margin-right: 0px;
+	cursor:pointer;
+
+}
+
+.bx-pager img {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+.bx-pager a.active img {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.bx-pager a {
+	background: #FFF;
+	width: 83px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	*display: inline;
+	*zoom: 1;
+	height: 114px;
+}
+
+html.lt-ie8 .bx-pager a {
+	margin-right: 0;
+}
+
+.bx-pager a.thumb-edge {
+	width: 145px;
+	margin-right: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	*display: inline;
+	*zoom: 1;
+	height: 95px;
+}

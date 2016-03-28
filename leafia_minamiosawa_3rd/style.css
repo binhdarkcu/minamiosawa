@@ -1,0 +1,28 @@
+.boxJoinus .tip01_text{
+	font-size:12px;
+	line-height:1.5;
+	color:#ffffff;
+	text-align:left;
+	background:#1D1333;
+	border:2px solid #ffffff;
+	padding:10px;
+	position:absolute;
+	left:345px;
+	top:0px;
+	display:none;
+}
+.boxJoinus .tip02_text{
+	font-size:12px;
+	line-height:1.5;
+	color:#ffffff;
+	text-align:left;
+	background:#1D1333;
+	border:2px solid #ffffff;
+	padding:10px;
+	position:absolute;
+	width:309px;
+	left:345px;
+	top:0px;
+	display:none;
+	height:96px;
+}

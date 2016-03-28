@@ -1,0 +1,153 @@
+@charset "shift-jis";
+
+/* [structure] -------------------------------------------------------------- (o) */
+a {
+	color: #1574b6;
+	text-decoration: underline;
+}
+a:visited {
+	color: #7256a4;
+}
+a:hover {
+	color: #0d82fe;
+}
+* {
+	font-family: "Lucida Grande", "‚l‚r ‚oƒSƒVƒbƒN", sans-serif !important;
+}
+body {
+	color: #333;
+	font: 14px/20px "Lucida Grande", "‚l‚r ‚oƒSƒVƒbƒN", sans-serif;
+	*font-size: 90%;
+	*line-height: 135%;
+}
+@media print {
+	body {
+		_zoom: 0.72;
+	}
+}
+
+/* [content] ---------------------------------------------------------------- */
+div#content {
+	_height: 1%;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 11px;
+	width: 880px;
+	*zoom: 1;
+}
+div#content:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+body.popup div#content {
+	border-top: 2px solid #999;
+	width: 650px;
+}
+
+/* [main-content] ----------------------------------------------------------- */
+div#main-content {
+	border-top: 2px solid #999;
+	float: left;
+	margin-bottom: 50px;
+	width: 650px;
+}
+
+/* [ore-title] -------------------------------------------------------------- */
+div#ore-title {
+	background: url(/common/image/ore_title/image_01.gif) no-repeat 100% 50%;
+	margin-bottom: -13px;
+	padding-bottom: 13px;
+	padding-top: 13px;
+}
+
+/* [sub-content] ------------------------------------------------------------ */
+div#sub-content {
+	float: right;
+	margin-bottom: 50px;
+	width: 200px;
+}
+
+/* [search] ----------------------------------------------------------------- */
+div#search {
+	background: #f2f2f2 url(/common/image/search/background_01.gif) repeat-x;
+	padding: 14px 10px 13px;
+}
+div#search form {
+	_height: 1%;
+	*zoom: 1;
+}
+div#search form:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+div#search form input[type="text"] {
+	font-size: 13px;
+	float: left;
+	width: 130px;
+}
+div#search form input.text {
+	font-size: 13px;
+	float: left;
+	width: 130px;
+}
+div#search form input.button {
+	float: right;
+}
+
+/* [local-navigation] ------------------------------------------------------- */
+div#local-navigation ul li {
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding: 1px;
+}
+div#local-navigation ul li a {
+	background: url(/common/image/content/icon_link_01.gif) no-repeat 17px 12px;
+	display: block;
+	padding: 5px 14px 4px 28px;
+}
+div#local-navigation ul li em {
+	display: block;
+	background-color: #e0ebff;
+	font-weight: bold;
+}
+div#local-navigation ul li em a {
+	background-image: url(/common/image/local_navigation/icon_01.gif);
+	color: #333;
+	text-decoration: none;
+}
+div#local-navigation ul li ul {
+	background: url(/common/image/local_navigation/background_01.gif) repeat-x;
+	margin-bottom: -1px;
+	margin-left: -1px;
+	margin-right: -1px;
+	padding-top: 2px;
+}
+div#local-navigation ul li ul li {
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+}
+div#local-navigation ul li ul li a {
+	background-position: 26px 12px;
+	padding-left: 35px;
+}
+
+/* [directory] -------------------------------------------------------------- */
+div#directory {
+	background-color: #f7f7f7;
+	border: 1px solid #e5e5e5;
+	clear: both;
+	padding: 14px 19px;
+	*zoom: 1;
+}
+div#directory div.grid {
+	background: url(/common/image/directory/background_01.gif) repeat-y;
+}

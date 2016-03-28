@@ -1,0 +1,26 @@
+@charset "Shift_JIS";
+/* CSS Document */
+
+
+/*-----------------wrapper---------------*/
+
+body {
+	background: #FFF;
+}
+
+div#page {
+	background: #FFF;
+}
+
+div#wrapper {
+	text-align: left;
+}
+
+div#wrapper div#container {
+	background: none;
+}
+
+div#map-page {
+	background: #FFF;
+	text-align: left;
+}

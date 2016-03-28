@@ -1,0 +1,102 @@
+@charset "shift-jis";
+/* CSS Document */
+
+body {
+	margin:0;
+	padding:0;
+}
+
+/* [ore-container] ---------------------------------------------------------- */
+div#ore-container {
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 50px;
+	width: 920px;
+}
+body.popup div#ore-container {
+	width: 690px;
+}
+
+/* [ore-header] ------------------------------------------------------------- */
+div#ore-header {
+	_height: 1%;
+	margin-left: 6px;
+	padding-right: 20px;
+	*zoom: 1;
+}
+div#ore-header:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+div#ore-header p {
+	float: left;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+div#ore-header p a {
+	display: block;
+	font-size: 1px;
+	height: 58px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 388px;
+}
+
+/* [ore-heading] ------------------------------------------------------------ */
+h2.ore-heading {
+	background:transparent url(../common/image/ore_heading/background_01.gif) no-repeat scroll 0 100%;
+	border-bottom:1px solid #CCCCCC;
+	color:#333333;
+	font-family:"Lucida Grande","‚l‚r ‚oƒSƒVƒbƒN",sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	line-height:20px;
+	margin-bottom:0;
+	margin-top:0;
+	padding-bottom:7px;
+	padding-left:14px;
+}
+
+
+.outline {
+	height: 58px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.contents {
+	margin: 30px 0 10px 0;
+}
+.contents table.border{
+	margin-top: 15px;
+	border: 1px solid #CCCCCC;
+	border-collapse:collapse;
+}
+.border td, .border th {
+	padding-left: 5px;
+}
+.contents .border td{
+	border: 1px solid #CCCCCC;
+}
+.contents .border th {
+	border: 1px solid #CCCCCC;
+	font-weight: normal;
+}
+.copyright {
+	text-align: center;
+}
+#identity {
+	float:left;
+}
+#identity img{
+	margin: 10px;
+}
+.style1 {
+	font-size: 12px
+}
+.style2 {
+	font-size: 16px;
+	font-weight: bold;
+}

@@ -1,0 +1,152 @@
+/****
+INFORMATION Class
+****/
+
+/*モデル公開スケジュール*/
+.INFO_MODEL_TITLE {
+	color: #333333;
+	font-weight: bold;
+	font-size: 16px;
+	display: none;
+}
+/*日付*/
+.INFO_MODEL_BODY {
+	color: #333333;
+	font-weight: normal;
+	font-size: 14px;
+	display: block;
+}
+/*注釈*/
+.INFO_MODEL_MESS {
+	color: #333333;
+	font-weight: bold;
+	font-size: 14px;
+	display: block;
+	line-height:170%
+}
+
+/*イベントタイトル*/
+.INFO_EVENT_TITLE {
+	color: #333333;
+	font-weight: bold;
+	font-size: 16px;
+	display: block;
+	line-height:170%
+}
+/*イベント内容*/
+.INFO_EVENT_BODY {
+	color: #333333;
+	font-weight: normal;
+	font-size: 14px;
+	display: block;
+}
+/*イベント注釈*/
+.INFO_EVENT_MESS {
+	color: #333333;
+	font-weight: lighter;
+	font-size: 10px;
+	display: block;
+}
+
+/*登録スケジュールタイトル*/
+.INFO_REG_TITLE {
+	color: #333333;
+	font-weight: bold;
+	font-size: 16px;
+	display: block;
+}
+/*登録スケジュール全体*/
+.INFO_REG_BODY {
+	color: #333333;
+	font-weight: normal;
+	font-size: 14px;
+	display: block;
+}
+/*登録スケジュール小見出し*/
+.INFO_REG_BODY_COLUMN1 {
+	color: #333333;
+	font-weight: normal;
+	font-size: 14px;
+	display: inline;
+	margin-left:20px;
+}
+
+/*登録スケジュール内容*/
+.INFO_REG_BODY_COLUMN2 {
+	color: #333333;
+	font-weight: normal;
+	font-size: 14px;
+	display: inline;
+	margin-left:10px;
+}
+/*登録スケジュール注釈全体*/
+.INFO_REG_MESS {
+	color: #333333;
+	font-weight: lighter;
+	font-size: 9px;
+	display: block;
+}
+/*登録スケジュール注釈小見出し*/
+.INFO_REG_MESS_COLUMN1 {
+	color: #333333;
+	font-weight: lighter;
+	font-size: 9px;
+	display: block;
+}
+
+/*登録スケジュール注釈内容*/
+.INFO_REG_MESS_COLUMN2 {
+	color: #333333;
+	font-weight: lighter;
+	font-size: 9px;
+	display: block;
+}
+
+/*スケジュールタイトル*/
+.INFO_SCHEDULE_TITLE {
+	color: #333333;
+	font-weight: bold;
+	font-size: 16px;
+	display: none;
+	line-height:170%
+}
+/*スケジュール内容*/
+.INFO_SCHEDULE_BODY {
+	color: #333333;
+	font-weight: normal;
+	font-size: 14px;
+	display: block;
+	line-height:170%
+/*	margin-left:12px;	*/
+}
+/*スケジュール注釈*/
+.INFO_SCHEDULE_MESS {
+	color: #333333;
+	font-weight: lighter;
+	font-size: 9px;
+	display: inline;
+}
+
+/*その他タイトル*/
+.INFO_ETC_TITLE {
+	color: #333333;
+	font-weight: bold;
+	font-size: 16px;
+	display: none;
+	line-height:170%
+}
+/*その他内容*/
+.INFO_ETC_BODY {
+	color: #333333;
+	font-weight: normal;
+	font-size: 14px;
+	display: block;
+	line-height:170%
+}
+/*その他注釈*/
+.INFO_ETC_MESS {
+	color: #333333;
+	font-weight: lighter;
+	font-size: 9px;
+	display: block;
+}
