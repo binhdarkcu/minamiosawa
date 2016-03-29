@@ -224,58 +224,7 @@
 	.msCaption span.sCap {
 		display: none;
 	}
-	
-	
-/* @media 960 START */
-@media screen and (max-width: 960px) {
-	#btArea .section {
-		width: auto;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	.msCaption span.sCap {
-		display: block;
-	}
-}
-/* @media 960 END */
 
-/* @media 959 START */
-@media screen and (max-width: 959px) {
-	.innerArea { width: 820px;}
-	.parentArea { height: 120px;}
-	.madoriArea { width: 820px;}
-	.madoriBtn .btn { width: 400px;}
-	.spec { width: 378px; font-size: 18px;}
-}
-/* @media 959 END */
-
-/* @media 820 START */
-@media screen and (max-width: 820px) {
-	.innerArea { width: 728px;}
-	.madoriArea { width: 728px;}
-	.madoriBtn .btn { width: 355px;}
-	.sSpec { width: 90%;}
-	.spec { width: 336px; height: 120px;}
-	.spec .mainTxt,.pre .spec .mainTxt { padding-top:0; padding-right:0; padding-bottom:5px; border-right: none;}
-	.madoriBtn .btn:hover .spec .mainTxt,.madoriBtn .btn.pre:hover .spec .mainTxt { border-right: none;}
-	.madoriArea .btPrint {display: none;}
-}
-/* @media 820 END */
-
-/* @media 768 START */
-@media screen and (max-width: 768px) {
-	.innerArea { width: 600px;}
-	.parentArea { height: 95px;}
-	.madoriArea { width: 600px;}
-	.madoriBtn .btn { width: 294px;}
-	.spec { width: 256px; font-size: 10px; letter-spacing: normal; height:85px;}
-	.spec .space { font-size: 10px;}
-	.spec .mainTxt { width: 40%; padding-top: 0px; padding-left: 5px;}
-	.spec .mainTxt img { width: 100%;}
-	.spec strong { font-size: 20px;}
-	.spec strong.min { font-size: 14px;}
-}
-/* @media 768 END */
 
 /* @media 600 START */
 @media screen and (max-width: 600px) {
@@ -299,48 +248,3 @@
 }
 /* @media 600 END */
 
-/* @media 527 START */
-@media screen and (max-width: 527px) {
-	.innerArea { width: 480px;}
-	.parentArea { height: 135px; margin-bottom: 12px;}
-	.madoriArea { width: 480px;}
-	.madoriBtn .btn { width: 234px;}
-	.spec { width: 204px; font-size: 15px;}
-	.sSpec { width: 90%; margin: 5px 5px 10px; padding-bottom: 5px; font-size: 10px;}
-	/*.txt { padding: 0 5px 5px; margin-bottom: 20px; text-align: left; font-size: 12px;}*/
-	.hanrei { margin-top: 30px; text-align: center;}
-	.msCaption { margin-top: 15px; font-size: 10px; text-align: center;}
-	.madoriArea .btClose { top: 10px; right: 5px;}
-	.madoriArea .btClose img { width: 85%;}
-}
-/* @media 527 END */
-
-/* @media 479 START */
-@media screen and (max-width: 479px) {
-	.innerArea { width: 320px;}
-	.madoriArea { width: 320px;}
-	.madoriBtn .btn { width: 154px; background-size: auto 50%;
-		-moz-background-size: auto 50%;
-		-webkit-background-size: auto 50%;
-		-o-background-size: auto 50%;
-		-ms-background-size: auto 50%;
-	}
-	.parentArea { height: 138px;}
-	.spec { width: 125px; height: 110px; padding: 10px; font-size: 15px; letter-spacing: 2px;}
-	.spec .mainTxt { padding-top: 0;}
-	.spec strong { font-size: 16px;}
-	.txt { font-size: 10px;}
-	.zu img { width: 100%;}
-	.msCaption { letter-spacing: 0px;}
-	.spec .tubo { display: none;}
-}
-/* @media 479 END */
-
-/* @media 320 START */
-@media screen and (max-width: 320px) {
-	.innerArea { width: 290px;}
-	.madoriArea { width: 290px;}
-	.madoriBtn .btn { width: 134px;}
-	.spec { width: 105px;}
-}
-/* @media 320 END */

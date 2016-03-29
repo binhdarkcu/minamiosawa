@@ -56,14 +56,14 @@
 	body #copyArea .wrap {
 		width: 1000px;
 		margin: 0 auto;
-		padding: 8px 0 8px 20px;
+		padding: 20px 0 8px 10px;
 	}
 	body #copyArea .wrap img {
 		display: block;
 		float: left;
 	}
 	body #copyArea .wrap img.sub {
-		margin: 12px 0 0 18px;
+		margin: -5px 0 0 10px;
 	}
 	
 
@@ -246,7 +246,7 @@ body div.pickup ul.pickupList li img.grayout {
         body #copyArea .wrap {
             width: auto;
             margin: 0 auto;
-            padding: 8px 20px;
+            padding: 8px 10px;
         }
         body #copyArea .wrap img {
             display: block;
@@ -254,12 +254,12 @@ body div.pickup ul.pickupList li img.grayout {
             margin: 0 auto;
         }
         body #copyArea .wrap img.sub {
-            margin-top: 10px;
-            width: 90%;
+            margin: 10px auto 0;
+            width: 60%;
         }
         body #copyArea .wrap img.main {
             margin-top: 0 !important;
-            width: 80%;
+            width: 100%;
         }
     
         /* obiArea */
