@@ -261,7 +261,10 @@
 	.planPage .p4 {
 	  margin-top: 45px;
 	}
-
+	.mobile{
+		display: none;
+		margin: 0 auto;
+	}
 
 /* @media 600 START */
 @media screen and (max-width: 600px) {
@@ -284,6 +287,32 @@
 	/* contentsBox */
 	body .contentsBox {
 		background-color: transparent; padding: 0;
+	}
+	.normal{
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}
+	.planPage{
+		padding-bottom: 68px;
+	}
+	.plan3box .p3{
+	    width: 91%;
+		float: right;
+	}
+	.planPage .txt{
+		padding-bottom: 20px;
+	}
+	.planPage .plan-title{
+		padding-bottom: 25px;
+		padding-top: 15px;
+	}
+	.planPage .w830 .p3{
+		margin-top: 15px;
+	}
+	.planPage .p4{
+		margin-top: 28px;
 	}
 }
 /* @media 600 END */
