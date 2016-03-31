@@ -1,0 +1,13 @@
+@charset "utf-8";
+.list-col li{
+	float:left;
+	width:50%;
+}
+
+
+
+/* @media 600 START */
+@media only screen and (max-width:600px) {
+	
+}
+/* @media 600 END */
