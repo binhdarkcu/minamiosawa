@@ -304,6 +304,10 @@
 	.planPage .txt{
 		padding-bottom: 20px;
 	}
+	.planPage .txt .mobile{
+		width:70%;
+	}
+
 	.planPage .plan-title{
 		padding-bottom: 25px;
 		padding-top: 15px;
