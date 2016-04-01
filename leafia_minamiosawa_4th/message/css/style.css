@@ -1,10 +1,79 @@
 @charset "utf-8";
 
-
-
+.messagePage .mobile{
+	display: none;
+}
+.messagePage{
+	padding-bottom: 62px;
+}
+.messagePage .title{
+	text-align: center;
+	padding-top: 5px;
+}
+.messagePage .mcontent{
+	padding-top: 38px;
+}
+.messagePage .text{
+	padding-top: 41px;
+	padding-left: 18px;
+}
+.messagePage .text span{
+	display: block;
+	font-size: 12px;
+	color: #030100;
+}
+.messagePage a.btn{
+	display: table;
+	margin: 56px auto 0;
+}
 
 /* @media 600 START */
 @media only screen and (max-width:600px) {
-	
+	.messagePage .normal{
+		display: none;
+	}
+	.messagePage .mobile{
+		display: block;
+		position: relative;
+	}
+	.messagePage .mcontent{
+		padding-top: 0;
+	}
+	.messagePage .mobile .btnnext{
+		position: absolute;
+		    bottom: -19px;
+		right: 40px;
+		width: 100%;
+		text-align: right;
+	}
+	.messagePage .mobile .btnnext a.next{
+		background: url(../imgs/next.png) no-repeat;
+		width: 43px;
+		height: 43px;
+		display: inline-block;
+	}
+	.messagePage .mobile .btnnext a.back{
+		background: url(../imgs/back.png) no-repeat;
+		width: 43px;
+		height: 44px;
+		display: inline-block;
+		margin-right: 7px;
+	}
+	.messagePage .mbox{
+		margin-bottom: 30px;
+	}
+	.messagePage .text span{
+		font-size: 16px;
+	}
+	.messagePage .text{
+		padding-left: 8px;
+		padding-top: 0;
+	}
+	.messagePage a.btn{
+		margin-top: 65px;
+	}
+	.messagePage{
+		padding-bottom: 45px;
+	}
 }
 /* @media 600 END */
