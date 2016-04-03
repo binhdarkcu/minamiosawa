@@ -118,6 +118,7 @@
          </div>
          <!-- / #header -->
          <div id="container">
+            <div id="preloadImage"></div>
             <div id="mainContent" class="article">
                <div class="wrap">
                   <div class="planPage">
@@ -134,7 +135,7 @@
                         <img src="imgs/plan/plan-first.png" class="mobile" alt=""/>
    							<div class="roommap">
                            <div class="normal selectRoom">
-                              <img src="imgs/plan/map.png" class="map" alt=""/>
+                              <div class="map"></div>
                               <div class="room">
                                  <div class="room-4-5 r" id="room-4-5"></div>
                                  <div class="room-4-6 r" id="room-4-6"></div>
@@ -142,13 +143,31 @@
                                  <div class="room-5-2 r" id="room-5-2"></div>
                                  <div class="room-1-1 r" id="room-1-1"></div>
                                  <div class="room-1-2 r" id="room-1-2"></div>
+                                 <div class="room-7-4 r" id="room-7-4"></div>
+                                 <div class="room-7-5 r" id="room-7-5"></div>
+                                 <div class="room-7-6 r" id="room-7-6"></div>
+                                 <div class="room-7-7 r" id="room-7-7"></div>
+                                 <div class="room-5-8 r" id="room-5-8"></div>
+                                 <div class="room-5-9 r" id="room-5-9"></div>
+                                 <div class="room-5-10 r" id="room-5-10"></div>
+                                 <div class="room-2-2 r" id="room-2-2"></div>
+                                 <div class="room-2-1 r" id="room-2-1"></div>
                               </div>
-                              <a href="#" class="choose room-4-5" onmouseover="planPage.hoverRoom('room-4-5')"></a>
-                              <a href="#" class="choose room-4-6" onmouseover="planPage.hoverRoom('room-4-6')"></a>
-                              <a href="#" class="choose room-5-1" onmouseover="planPage.hoverRoom('room-5-1')"></a>
-                              <a href="#" class="choose room-5-2" onmouseover="planPage.hoverRoom('room-5-2')"></a>
-                              <a href="#" class="choose room-1-1" onmouseover="planPage.hoverRoom('room-1-1')"></a>
-                              <a href="#" class="choose room-1-2" onmouseover="planPage.hoverRoom('room-1-2')"></a>
+                              <a href="javascript:void(0);" class="choose room-4-5" onclick="planPage.openRoom('pp-plan01')" onmouseover="planPage.hoverRoom('room-4-5')"></a>
+                              <a href="javascript:void(0);" class="choose room-4-6" onclick="planPage.openRoom('pp-plan02')" onmouseover="planPage.hoverRoom('room-4-6')"></a>
+                              <a href="javascript:void(0);" class="choose room-5-1" onclick="planPage.openRoom('pp-plan01')" onmouseover="planPage.hoverRoom('room-5-1')"></a>
+                              <a href="javascript:void(0);" class="choose room-5-2" onclick="planPage.openRoom('pp-plan02')" onmouseover="planPage.hoverRoom('room-5-2')"></a>
+                              <a href="javascript:void(0);" class="choose room-1-1" onclick="planPage.openRoom('pp-plan01')" onmouseover="planPage.hoverRoom('room-1-1')"></a>
+                              <a href="javascript:void(0);" class="choose room-1-2" onclick="planPage.openRoom('pp-plan02')" onmouseover="planPage.hoverRoom('room-1-2')"></a>
+                              <a href="javascript:void(0);" class="choose room-7-4" onclick="planPage.openRoom('pp-plan01')" onmouseover="planPage.hoverRoom('room-7-4')"></a>
+                              <a href="javascript:void(0);" class="choose room-7-5" onclick="planPage.openRoom('pp-plan02')" onmouseover="planPage.hoverRoom('room-7-5')"></a>
+                              <a href="javascript:void(0);" class="choose room-7-6" onclick="planPage.openRoom('pp-plan01')" onmouseover="planPage.hoverRoom('room-7-6')"></a>
+                              <a href="javascript:void(0);" class="choose room-7-7" onclick="planPage.openRoom('pp-plan02')" onmouseover="planPage.hoverRoom('room-7-7')"></a>
+                              <a href="javascript:void(0);" class="choose room-5-8" onclick="planPage.openRoom('pp-plan01')" onmouseover="planPage.hoverRoom('room-5-8')"></a>
+                              <a href="javascript:void(0);" class="choose room-5-9" onclick="planPage.openRoom('pp-plan02')" onmouseover="planPage.hoverRoom('room-5-9')"></a>
+                              <a href="javascript:void(0);" class="choose room-5-10" onclick="planPage.openRoom('pp-plan01')" onmouseover="planPage.hoverRoom('room-5-10')"></a>
+                              <a href="javascript:void(0);" class="choose room-2-2" onclick="planPage.openRoom('pp-plan02')" onmouseover="planPage.hoverRoom('room-2-2')"></a>
+                              <a href="javascript:void(0);" class="choose room-2-1" onclick="planPage.openRoom('pp-plan01')" onmouseover="planPage.hoverRoom('room-2-1')"></a>
                            </div>
                            <div class="desc">
                               ※掲載の区画図は図面を基に描き起こしたもので、施工上やむを得ず変更する場合がございます。予めご了承ください。
@@ -168,7 +187,7 @@
                            <div class="p01">
                               <img src="imgs/popup/p-1.png" class="normal " alt=""/>
                            </div>
-                           <a href="#" class="close"><img src="imgs/popup/close.png" alt=""/></a>
+                           <a href="javascript:void(0);" class="close"><img src="imgs/popup/close.png" alt=""/></a>
                         </div>
                      </div>
 
@@ -183,7 +202,7 @@
                            <div class="plan4">
                               <img src="imgs/popup/plan-4.png" class="normal " alt=""/>
                            </div>
-                           <a href="#" class="close"><img src="imgs/popup/close.png" alt=""/></a>
+                           <a href="javascript:void(0);" class="close"><img src="imgs/popup/close.png" alt=""/></a>
                         </div>
                      </div>
    					</div>
