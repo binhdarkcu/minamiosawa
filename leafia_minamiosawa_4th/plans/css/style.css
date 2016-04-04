@@ -445,75 +445,7 @@
 	    width: 61px;
 	    height: 52px;
 	}
-	#preloadImage{
-		width: 0px;
-	    height: 0px;
-	    display: inline;
-	    background-image: url(../imgs/room/r2-1.png);
-	    background-image: url(../imgs/room/r2-2.png);
-	    background-image: url(../imgs/room/r5-10.png);
-	    background-image: url(../imgs/room/r5-9.png);
-
-	    background-image: url(../imgs/room/r5-8.png);
-	    background-image: url(../imgs/room/r7-7.png);
-	    background-image: url(../imgs/room/r7-6.png);
-	    background-image: url(../imgs/room/r7-5.png);
-
-	    background-image: url(../imgs/room/r7-4.png);
-	    background-image: url(../imgs/room/r1-2.png);
-	    background-image: url(../imgs/room/r1-1.png);
-	    background-image: url(../imgs/room/r5-2.png);
-
-	    background-image: url(../imgs/room/r5-1.png);
-	    background-image: url(../imgs/room/r4-6.png);
-	    background-image: url(../imgs/room/r4-5.png);
-	    background-image: url();
-	}
-	.room .room-4-5{
-		background: url(../imgs/room/r4-5.png) no-repeat;
-	}
-	.room .room-4-6{
-		background: url(../imgs/room/r4-6.png) no-repeat;
-	}
-	.room .room-5-1{
-		background: url(../imgs/room/r5-1.png) no-repeat;
-	}
-	.room .room-5-2{
-		background: url(../imgs/room/r5-2.png) no-repeat;
-	}
-	.room .room-1-1{
-		background: url(../imgs/room/r1-1.png) no-repeat;
-	}
-	.room .room-1-2{
-		background: url(../imgs/room/r1-2.png) no-repeat;
-	}
-	.room .room-7-4{
-		background: url(../imgs/room/r7-4.png) no-repeat;
-	}
-	.room .room-7-5{
-		background: url(../imgs/room/r7-5.png) no-repeat;
-	}
-	.room .room-7-6{
-		background: url(../imgs/room/r7-6.png) no-repeat;
-	}
-	.room .room-7-7{
-		background: url(../imgs/room/r7-7.png) no-repeat;
-	}
-	.room .room-5-8{
-		background: url(../imgs/room/r5-8.png) no-repeat;
-	}
-	.room .room-5-9{
-		background: url(../imgs/room/r5-9.png) no-repeat;
-	}
-	.room .room-5-10{
-		background: url(../imgs/room/r5-10.png) no-repeat;
-	}
-	.room .room-2-2{
-		background: url(../imgs/room/r2-2.png) no-repeat;
-	}
-	.room .room-2-1{
-		background: url(../imgs/room/r2-1.png) no-repeat;
-	}
+	
 
 /* @media 600 START */
 @media screen and (max-width: 600px) {
@@ -544,19 +476,21 @@
 		display: block;
 	}
 	.planPage{
-		padding-bottom: 68px;
+		padding-bottom: 72px;
 	}
 	.plan3box .p3{
 	    width: 91%;
 		float: right;
 	}
 	.planPage .txt{
-		padding-bottom: 20px;
+		padding-bottom: 26px;
 	}
 	.planPage .txt .mobile{
 		width:70%;
 	}
-
+	.plangroup .desc{
+		padding-bottom: 55px;
+	}
 	.planPage .plan-title{
 		padding-bottom: 25px;
 		padding-top: 15px;
@@ -566,6 +500,119 @@
 	}
 	.planPage .p4{
 		margin-top: 28px;
+	}
+	.selectRoom .map{
+		    background: transparent;
+		        
+	}
+	.plangroup .roommap .map{
+		position: relative;
+	}
+	.selectRoom a.choose{
+		position: absolute;
+		margin-left: 0!important;
+	    margin-top: 0!important;
+	    height: 6%;
+	    width: 14%;
+	}
+	.selectRoom{
+		max-height: 985px;
+		height: auto;
+	}
+	.selectRoom a.choose.room-4-5{    
+	    top: 19%;
+    	left: 20%;
+	    
+	}
+	.selectRoom a.choose.room-4-6{
+	    top: 16%;
+	    position: absolute;
+	    left: 36%;
+	}
+	.selectRoom a.choose.room-5-1{    
+	    position: absolute;
+	    left: 30%;
+    	top: 30%;
+	}
+	.selectRoom a.choose.room-5-2{    
+	    position: absolute;
+	    left: 35%;
+    	top: 37%;
+	}
+	.selectRoom a.choose.room-1-1{    
+	    position: absolute;
+	    left: 49%;
+    	top: 22%;
+	}
+	.selectRoom a.choose.room-1-2{    
+	    position: absolute;
+	    left: 56%;
+    	top: 28%;
+
+	}
+	.selectRoom a.choose.room-7-4{    
+	    position: absolute;
+	    left: 16%;
+	    top: 59%;
+	}
+	.selectRoom a.choose.room-7-5{    
+	    position: absolute;
+	    left: 32%;
+	    top: 59%;
+	}
+	.selectRoom a.choose.room-7-6{    
+	    position: absolute;
+	    left: 27%;
+    	top: 66%;
+	}
+	.selectRoom a.choose.room-7-7{    
+	    position: absolute;
+	    
+    	left: 12%;
+    	top: 66%;
+	}
+	.selectRoom a.choose.room-5-8{    
+	    position: absolute;
+	    left: 45%;
+    	top: 73%;
+	}
+	.selectRoom a.choose.room-5-9{    
+	    position: absolute;
+	    left: 54%;
+    	top: 64%;
+	}
+	.selectRoom a.choose.room-5-10{    
+	    position: absolute;
+	    left: 60%;
+    	top: 56%;
+	}
+	.selectRoom a.choose.room-2-2{    
+	    position: absolute;
+	    left: 4%;
+	    top: 84%;
+	    width: 15%;
+	}
+	.selectRoom a.choose.room-2-1{    
+        position: absolute;
+	    left: 20%;
+	    top: 83%;
+	    width: 12%;
+	    height: 6%;
+	}
+	.room .mobile{
+		margin: 0;
+	}
+	.room .r{
+		background: transparent!important;
+	}
+	.popup .pContent .p01{
+		padding-bottom: 17px;
+	}
+	.popup .pContent{
+		padding: 28px 27px;
+	}
+	.popup.popup-plan2 .pContent .plan4{
+		padding-top: 10px;
 	}
 }
 /* @media 600 END */

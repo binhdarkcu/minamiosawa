@@ -118,7 +118,6 @@
          </div>
          <!-- / #header -->
          <div id="container">
-            <div id="preloadImage"></div>
             <div id="mainContent" class="article">
                <div class="wrap">
                   <div class="planPage">
@@ -132,26 +131,27 @@
    						</div>
    						<div class="plangroup">
                         <img src="imgs/plan/plan-first.png" class="normal" alt=""/>
-                        <img src="imgs/plan/plan-first.png" class="mobile" alt=""/>
+                        <img src="imgs/responsive/plan-first-mb.png" class="mobile" alt=""/>
    							<div class="roommap">
-                           <div class="normal selectRoom">
-                              <div class="map"></div>
+                           <div class="selectRoom">
+                              <div class="map normal"></div>
+                              <div class="map mobile"><img src="imgs/responsive/map.png" alt=""></div>
                               <div class="room">
-                                 <div class="room-4-5 r" id="room-4-5"></div>
-                                 <div class="room-4-6 r" id="room-4-6"></div>
-                                 <div class="room-5-1 r" id="room-5-1"></div>
-                                 <div class="room-5-2 r" id="room-5-2"></div>
-                                 <div class="room-1-1 r" id="room-1-1"></div>
-                                 <div class="room-1-2 r" id="room-1-2"></div>
-                                 <div class="room-7-4 r" id="room-7-4"></div>
-                                 <div class="room-7-5 r" id="room-7-5"></div>
-                                 <div class="room-7-6 r" id="room-7-6"></div>
-                                 <div class="room-7-7 r" id="room-7-7"></div>
-                                 <div class="room-5-8 r" id="room-5-8"></div>
-                                 <div class="room-5-9 r" id="room-5-9"></div>
-                                 <div class="room-5-10 r" id="room-5-10"></div>
-                                 <div class="room-2-2 r" id="room-2-2"></div>
-                                 <div class="room-2-1 r" id="room-2-1"></div>
+                                 <div class="room-4-5 r" id="room-4-5"><img class="normal" src="imgs/room/r4-5.png"/><img class="mobile" src="imgs/responsive/r4-5.png"/></div>
+                                 <div class="room-4-6 r" id="room-4-6"><img class="normal" src="imgs/room/r4-6.png"/><img class="mobile" src="imgs/responsive/r4-6.png"/></div>
+                                 <div class="room-5-1 r" id="room-5-1"><img class="normal" src="imgs/room/r5-1.png"/><img class="mobile" src="imgs/responsive/r5-1.png"/></div>
+                                 <div class="room-5-2 r" id="room-5-2"><img class="normal" src="imgs/room/r5-2.png"/><img class="mobile" src="imgs/responsive/r5-2.png"/></div>
+                                 <div class="room-1-1 r" id="room-1-1"><img class="normal" src="imgs/room/r1-1.png"/><img class="mobile" src="imgs/responsive/r1-1.png"/></div>
+                                 <div class="room-1-2 r" id="room-1-2"><img class="normal" src="imgs/room/r1-2.png"/><img class="mobile" src="imgs/responsive/r1-2.png"/></div>
+                                 <div class="room-7-4 r" id="room-7-4"><img class="normal" src="imgs/room/r7-4.png"/><img class="mobile" src="imgs/responsive/r7-4.png"/></div>
+                                 <div class="room-7-5 r" id="room-7-5"><img class="normal" src="imgs/room/r7-5.png"/><img class="mobile" src="imgs/responsive/r7-5.png"/></div>
+                                 <div class="room-7-6 r" id="room-7-6"><img class="normal" src="imgs/room/r7-6.png"/><img class="mobile" src="imgs/responsive/r7-6.png"/></div>
+                                 <div class="room-7-7 r" id="room-7-7"><img class="normal" src="imgs/room/r7-7.png"/><img class="mobile" src="imgs/responsive/r7-7.png"/></div>
+                                 <div class="room-5-8 r" id="room-5-8"><img class="normal" src="imgs/room/r5-8.png"/><img class="mobile" src="imgs/responsive/r5-8.png"/></div>
+                                 <div class="room-5-9 r" id="room-5-9"><img class="normal" src="imgs/room/r5-9.png"/><img class="mobile" src="imgs/responsive/r5-9.png"/></div>
+                                 <div class="room-5-10 r" id="room-5-10"><img class="normal" src="imgs/room/r5-10.png"/><img class="mobile" src="imgs/responsive/r5-10.png"/></div>
+                                 <div class="room-2-2 r" id="room-2-2"><img class="normal" src="imgs/room/r2-2.png"/><img class="mobile" src="imgs/responsive/r2-2.png"/></div>
+                                 <div class="room-2-1 r" id="room-2-1"><img class="normal" src="imgs/room/r2-1.png"/><img class="mobile" src="imgs/responsive/r2-1.png"/></div>
                               </div>
                               <a href="javascript:void(0);" class="choose room-4-5" onclick="planPage.openRoom('pp-plan01')" onmouseover="planPage.hoverRoom('room-4-5')"></a>
                               <a href="javascript:void(0);" class="choose room-4-6" onclick="planPage.openRoom('pp-plan02')" onmouseover="planPage.hoverRoom('room-4-6')"></a>
@@ -175,19 +175,26 @@
                            <div class="4box normal">
                               <img src="imgs/plan/plan-ldk.png" class="" alt=""/>
                            </div>
-                           
+                           <div class="4box mobile">
+                              <img src="imgs/responsive/plan-ldk.png" class="" alt=""/>
+                           </div>
                         </div>
    							
+
+
    						</div>
                      <!--POPUP 1-->
                      <div class="popup popup-plan" id="pp-plan01">
                         <div class="overplay"></div>
                         <div class="pContent">
                            <img src="imgs/plan/plan-1.png" class="normal " alt=""/>
+                           <img src="imgs/responsive/plan-1.png" class="mobile " alt=""/>
                            <div class="p01">
                               <img src="imgs/popup/p-1.png" class="normal " alt=""/>
+                              <img src="imgs/responsive/p-1.png" class="mobile " alt=""/>
                            </div>
-                           <a href="javascript:void(0);" class="close"><img src="imgs/popup/close.png" alt=""/></a>
+                           <a href="javascript:void(0);" class="close"><img src="imgs/popup/close.png" alt="" class="normal"/><img src="imgs/responsive/close.png" alt="" class="mobile"/></a>
+                           <div class="clear"></div>
                         </div>
                      </div>
 
@@ -196,13 +203,17 @@
                         <div class="overplay"></div>
                         <div class="pContent">
                            <img src="imgs/plan/plan-1.png" class="normal " alt=""/>
+                           <img src="imgs/responsive/plan-1.png" class="mobile " alt=""/>
                            <div class="p01">
                               <img src="imgs/popup/p-2.png" class="normal " alt=""/>
+                              <img src="imgs/responsive/p-2.png" class="mobile " alt=""/>
                            </div>
                            <div class="plan4">
                               <img src="imgs/popup/plan-4.png" class="normal " alt=""/>
+                              <img src="imgs/responsive/plan-4.png" class="mobile " alt=""/>
                            </div>
-                           <a href="javascript:void(0);" class="close"><img src="imgs/popup/close.png" alt=""/></a>
+                           <a href="javascript:void(0);" class="close"><img src="imgs/popup/close.png" alt="" class="normal"/><img src="imgs/responsive/close.png" alt="" class="mobile"/></a>
+                           <div class="clear"></div>
                         </div>
                      </div>
    					</div>
