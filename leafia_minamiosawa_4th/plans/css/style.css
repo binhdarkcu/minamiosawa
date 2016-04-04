@@ -243,6 +243,7 @@
 	.selectRoom{
 		position: relative;
 		height: 489px;
+		overflow: hidden;
 	}
 	.planPage .txt {
 	  font-size: 29px;
@@ -352,7 +353,6 @@
 		z-index: -1;
 	}
 	.room .r{
-		display: none;
 		width: 100%;
 		height: 100%;
 	}

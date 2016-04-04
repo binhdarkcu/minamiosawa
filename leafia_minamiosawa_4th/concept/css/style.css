@@ -30,9 +30,20 @@ li.right{
 /* @media 600 START */
 @media only screen and (max-width:600px) {
 	#mainContent.concept-page{
-	background:url('../imgs/bg-body-mb.jpg') no-repeat center top;
+	 background: transparent;
+   }
+   .concept-page .wrap.conceptwrap{
+    background: url('../imgs/bg-body-mb.png') no-repeat center bottom;
+    background-size: cover;
+   }
+   .concept-page #contents{
+    margin-bottom: 240px;
    }
    .dt{display:none;}
    .mb{display:block;}
+   .list-map ul li{
+      padding-left: 0;
+      margin-bottom: 12px;
+   }
 }
 /* @media 600 END */
