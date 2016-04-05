@@ -75,7 +75,7 @@ li p{
 .accordion-section-content {
 	padding:30px;
 	display:none;
-	background:#5D5D5D;
+	background:#fff;
 	border:1px solid #2C6124;
 }
 .accordion-section-content.open{
@@ -100,6 +100,17 @@ li p{
 	font-size: 16px;
 	color: #231F20;
 }
+.charmPage .txtright{
+	text-align: right;
+	color: #231F20;
+	font-size: 12px;
+	top: -20px;
+	display: block;
+	position: relative;
+}
+.charmPage .txtright.mb{
+   	display: none;
+   }
 /* @media 600 START */
 @media only screen and (max-width:600px) {
 	.mb{display:block;}
@@ -117,5 +128,20 @@ li p{
    .txt{padding-top:25px;padding-bottom:15px;}
    .map{margin-top:0;}
    body #container{padding-top:0;}
+   .charmPage .txtright.dt{
+   	display: none;
+   }
+   .charmPage .txtright.mb{
+   	    margin-top: 20px;
+    top: 0;
+    margin-bottom: 30px;
+   }
+   .charmPage .txt{
+   	width: 100%;
+   }
+   .charmPage .txtright.mb{
+   	display: block;
+   }
+
 }
 /* @media 600 END */

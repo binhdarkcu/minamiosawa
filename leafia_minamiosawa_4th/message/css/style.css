@@ -75,5 +75,8 @@
 	.messagePage{
 		padding-bottom: 45px;
 	}
+	.messagePage a.btn img{
+		width: 100%;
+	}
 }
 /* @media 600 END */

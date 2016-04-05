@@ -45,5 +45,29 @@ li.right{
       padding-left: 0;
       margin-bottom: 12px;
    }
+   .concept-page .list-map img{
+    width: 100%;
+   }
+   .concept-page .accordion-section-title.active .readmore{
+    display: none;
+   }
+   .accordion-section-content{
+    display: none;
+   }
+   .accordion{
+    margin-bottom: 20px;
+   }
+   .accordion-section-content.open{
+    display: block;
+   }
+   .accordion-section-content a{
+    padding-top: 10px;
+   }
+   .accordion-section a.close{
+    display:  none;
+   }
+   .accordion-section a.close.show{
+    display: block;
+   }
 }
 /* @media 600 END */
