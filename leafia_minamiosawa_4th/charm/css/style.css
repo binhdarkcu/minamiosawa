@@ -76,7 +76,6 @@ li p{
 	padding:30px;
 	display:none;
 	background:#fff;
-	border:1px solid #2C6124;
 }
 .accordion-section-content.open{
    display:block;
@@ -118,6 +117,9 @@ li p{
 	.txt-map {
      margin-top:0;
      padding-left:0;
+   }
+   .txt-map p{
+   	font-size:10px;
    }
    .charm-title{
    	padding-top:20px;padding-bottom:45px;
