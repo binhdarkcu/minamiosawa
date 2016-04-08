@@ -1,10 +1,75 @@
 @charset "utf-8";
 
+.enviromentPage .title img{
+	display: table;
+	margin: 26px auto 32px;
 
-
-
+}
+.enviromentPage .shiftbutton{width: 101%;}
+.enviromentPage .shiftbutton a{
+	margin-right: 6px;
+}
+.enviromentPage .shiftbutton a:hover{
+	opacity: 0.8;
+}
+.enviromentPage .shiftbutton a.last{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+.enviromentPage  .envi-map img{
+	margin-left: -15px;
+}
+.enviromentPage .t-1{
+	margin-top: 25px;
+	margin-bottom: 5px;
+}
+.enviromentPage .envi-map{
+	padding-bottom: 48px;
+}
+.enviromentPage .envi-box img{
+	padding-bottom: 34px;
+}
+.enviromentPage .txt{
+	font-size: 12px;
+	padding: 20px 0 22px;
+	color: #231F20;
+}
+.mobile{
+	display: none;
+}
 /* @media 600 START */
 @media only screen and (max-width:600px) {
-	
+	.desktop{
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}
+	.enviromentPage .shiftbutton a{
+		width: 19.1%;
+		float: left;
+		margin-right: 1%;
+	}
+	.enviromentPage .shiftbutton a img{
+		width: 100%;
+	}
+	.enviromentPage .shiftbutton{
+		width: 100%;
+	}
+	.enviromentPage .title img{
+		margin: 0 auto 15px;
+	}
+	.enviromentPage .t-1{
+		margin-top: 20px;
+	}
+	.enviromentPage .envi-map{
+		padding-bottom: 30px;
+	}
+	.enviromentPage .envi-map img{
+    	margin-left: -5px;
+	}
+	.enviromentPage .txt{
+		padding: 34px 0 60px;
+	}
 }
 /* @media 600 END */
