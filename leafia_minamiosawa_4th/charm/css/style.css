@@ -50,6 +50,8 @@ li p{
 	overflow:hidden;
 	background:#2C6124;
 	margin-bottom:10px;
+	border:1px solid #2C6124;
+
 }
 .accordion p{
 	padding:10px 0;
