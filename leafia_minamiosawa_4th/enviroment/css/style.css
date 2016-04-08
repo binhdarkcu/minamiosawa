@@ -8,6 +8,11 @@
 .enviromentPage .shiftbutton{width: 101%;}
 .enviromentPage .shiftbutton a{
 	margin-right: 6px;
+	display: inline-block;
+    width: 191px;
+}
+.enviromentPage .shiftbutton a img{
+	width: 100%;
 }
 .enviromentPage .shiftbutton a:hover{
 	opacity: 0.8;
@@ -23,6 +28,9 @@
 	margin-top: 25px;
 	margin-bottom: 5px;
 }
+.enviromentPage .t-1 img{
+	width: 100%;
+}
 .enviromentPage .envi-map{
 	padding-bottom: 48px;
 }
@@ -32,6 +40,56 @@
 .enviromentPage .txt{
 	font-size: 12px;
 	padding: 20px 0 22px;
+	color: #231F20;
+}
+/*PAGE 2*/
+.enviromentPage.p2 .t-2{
+	margin: 20px 0;
+}
+.enviromentPage.p2 .imgbox p{
+	font-size: 16px;
+	padding: 15px 0 45px;
+}
+.enviromentPage.p2 .imgbox img{
+	width: 100%;
+}
+.enviromentPage.p2 .bigbox{
+	margin-top: 35px;
+	margin-bottom: 80px;
+}
+.enviromentPage.p2 .bigbox .img{
+	float: left;
+	margin-right: 25px;
+}
+.enviromentPage.p2 .bigbox .con{
+	float: left;
+	width: 664px;
+}
+.enviromentPage.p2 .bigbox .con img{
+}
+.enviromentPage.p2 .bigbox p{
+	font-size: 14px;
+	color: #231F20;
+	padding: 12px 2px 0;
+}
+.enviromentPage.p2 .itemlist{
+
+}
+.enviromentPage.p2 .itemlist .item{
+	float: left;
+	width: 484px;
+	margin-bottom: 75px;
+	margin-right: 30px;
+}
+.enviromentPage.p2 .itemlist .item.r0{
+	margin-right: 0;
+}
+.enviromentPage.p2 .itemlist .item .title{
+	margin-top: 15px;
+	margin-bottom: 12px;
+}
+.enviromentPage.p2 .itemlist .item p{
+	font-size: 12px;
 	color: #231F20;
 }
 .mobile{
