@@ -95,6 +95,7 @@
 .mobile{
 	display: none;
 }
+
 /* @media 600 START */
 @media only screen and (max-width:600px) {
 	.desktop{
@@ -129,5 +130,111 @@
 	.enviromentPage .txt{
 		padding: 34px 0 60px;
 	}
+	.enviromentPage.p2 .bigbox .img{
+		margin-right: 0;
+	}
+	.enviromentPage.p2 .bigbox img{
+		width: 100%;
+	}
+	.enviromentPage.p2 .t-1{
+		margin-top: 32px;
+	}
+	.enviromentPage.p2 .t-2{
+		margin: 15px 0 13px;
+	}
+	.enviromentPage.p2 .imgbox p{
+		padding:0;
+	}
+	.enviromentPage.p2 .bigbox .con{
+		padding-top: 15px;
+	}
+	.enviromentPage.p2 .itemlist .item, .enviromentPage.p2 .bigbox .con{
+		width: 100%;
+	}
+	.enviromentPage.p2 .itemlist .item .title{
+		margin-bottom: 10px;
+	}
+	.enviromentPage.p2 .itemlist .item p{
+
+	}
+	.enviromentPage.p2 .itemlist .item{
+		margin-right:0;
+	}
+	.enviromentPage.p2 .itemlist .item img{
+		width: 100%;
+	}
+	.enviromentPage.p2 .boxinfo{
+
+	}
+	.enviromentPage.p2 .boxinfo .title{
+		font-size: 16px;
+	}
+	.enviromentPage.p2 .itemlist .item .con{
+		    padding-top: 15px;
+	}
+	.enviromentPage.p2 .itemlist .item{
+		margin-bottom: 47px;
+	}
+	.enviromentPage.p2 .boxinfo .title2{
+		color: #E55D3A;
+		font-weight: 700;
+		background: url(../imgs/2/line.png) repeat-x bottom center;
+		padding-bottom: 5px;
+	}
+	.enviromentPage.p2 .boxinfo .info{
+		
+	}
+	.enviromentPage.p2 .boxinfo .info p{
+		font-size: 15px;
+		padding-top: 5px;
+	}
+	.enviromentPage.p2 .boxinfo .info ul{
+		
+	}
+	.enviromentPage.p2 .boxinfo .info ul li{
+		font-size: 13px;
+		padding-bottom: 2px;
+	}
+	.enviromentPage.p2 .boxinfo .info ul li.li3{
+		margin-top: -2px;
+	}
+	.enviromentPage.p2 .boxinfo .info ul li span{
+		
+	}
+	.enviromentPage.p2 .boxinfo .info ul li span.s-home{
+		background: url(../imgs/2/i-home.png) no-repeat left center;
+		padding-left: 21px;
+		padding-bottom: 2px;
+		padding-top: 2px;
+		margin-right: 5px;
+	}
+	.enviromentPage.p2 .boxinfo .info ul li span.s-phone{
+		background: url(../imgs/2/i-phone.png) no-repeat left center;
+		padding-left: 21px;
+		padding-bottom: 2px;
+		padding-top: 3px;
+	}
+	.enviromentPage.p2 .boxinfo .info ul li span.s-clock{
+		background: url(../imgs/2/i-clock.png) no-repeat left center;
+		padding-left: 21px;
+		padding-bottom: 3px;
+		padding-top: 1px;
+		margin-right: 3px;
+	}
+	.enviromentPage.p2 .boxinfo .info ul li.li3 span.s-1{
+		padding-left: 21px;
+	}
+	.enviromentPage.p2 .boxinfo .info ul li.li3 span.s-2{
+		
+	}
+	
 }
 /* @media 600 END */
+/* @media 600 END */
+@media only screen and (max-width:386px) {
+	.enviromentPage.p2 .boxinfo .info ul li{
+	}
+	.enviromentPage.p2 .boxinfo .title2, .enviromentPage.p2 .boxinfo .title{
+		
+	}
+}
