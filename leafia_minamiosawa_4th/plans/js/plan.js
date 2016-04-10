@@ -25,6 +25,11 @@ var planPage = (function() {
 	function openRoom(idDiv){
 		$('.popup').css('display', 'none');
 		$('#' + idDiv).css('display', 'block');
+		var top =$('#' + idDiv).offset().top;
+		console.log(top);
+		$('html, body').animate({
+            scrollTop:top
+        }, 800);
 	}
 	function hoverRoom(idDiv){
 		if($(window).width() > 600){
