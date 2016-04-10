@@ -154,6 +154,107 @@
 	font-weight: bold;
 	font-size: 14px;
 }
+.env_map{
+	background-image:url(../imgs/ev/img_yuhodou_map.png);
+	background-repeat:no-repeat;
+	width:100%;
+	height:700px;
+	position:relative;
+	margin-left: -24px;
+}
+.env_map p{
+	position:absolute;
+}
+.env_map1{
+	left: 270px;
+	top: 255px;
+}
+.env_map1_pop{
+	left: 153px;
+	top: 86px;
+	display:none;
+}
+.env_map2{
+	left: 545px;
+	top:80px;
+}
+.env_map2_pop{
+	left: 646px;
+	top:35px;
+	display:none;
+}
+.env_map3{
+	left: 372px;
+	top: 255px;
+}
+.env_map3_pop{
+	left: 365px;
+	top: 82px;
+	display:none;
+}
+.env_map4{
+	left: 416px;
+	top: 526px;
+}
+.env_map4_pop{
+	left: 355px;
+	top: 565px;
+	display:none;
+}
+.env_map5{
+	left: 654px;
+	top: 345px;
+}
+.env_map5_pop{
+	left: 697px;
+	top: 414px;
+	display:none;
+}
+.env_map6{
+	left:641px;
+	top:230px;
+}
+.env_map6_pop{
+	left:641px;
+	top:60px;
+	display:none;
+}
+.env_map7{
+	left: 194px;
+	top: 325px;
+}
+.env_map7_pop{
+	left: 56px;
+	top: 162px;
+	display:none;
+}
+.env_map8{
+	left: 339px;
+	top: 423px;
+}
+.env_map8_pop{
+	left: 201px;
+	top: 484px;
+	display:none;
+}
+.env_map9{
+	left: 552px;
+	top: 351px;
+}
+.env_map9_pop{
+	left: 549px;
+	top: 181px;
+	display:none;
+}
+.env_map10{
+	left: 564px;
+	top: 437px;
+}
+.env_map10_pop{
+	left: 564px;
+	top: 475px;
+	display:none;
+}
 
 
 /* @media 600 START */
@@ -358,6 +459,134 @@
 		font-weight: bold;
 		line-height: 1;
 	}
+
+	.env_map{
+		background: transparent;
+		width:100%;
+		position:relative;
+		margin-left: -9px;
+		height: 37.231em;
+	}
+	.env_map p{
+		position:absolute;
+	}
+	.env_map img{
+		width :100%;
+		height: auto;
+	}
+	.env_map1{
+		left: 7.231em;
+		top: 8.22em;
+		width: 7.308em;
+		height: 3.846em;
+	}
+	.env_map1_pop{
+		left: 1em;
+		top: -2.3em;
+		display:none;
+		width: 13.923em;
+	}
+	.env_map2{
+		left: 20.923em;
+		width: 7.692em;
+		top: 1.708em;
+	}
+	.env_map2_pop{
+		left: 18em;
+		top: -9em;
+		display:none;
+		width: 13.923em;
+	}
+	.env_map3{
+		left: 14.923em;
+		top: 8.5em;
+		width: 7.692em;
+		height: 3.846em;
+	}
+	.env_map3_pop{
+		left: 15em;
+		top: -1.3em;
+		display:none;
+		width: 12.923em;
+	}
+	.env_map4{
+		left: 15em;
+		top: 22em;
+		width: 8.031em;
+	}
+	.env_map4_pop{
+		left: 10.2em;
+		top: 24.6em;
+		display:none;
+		width: 12.923em;
+	}
+	.env_map5{
+		left: 27.077em;
+		top: 13.585em;
+		width: 15.000em;
+	}
+	.env_map5_pop{
+		left: 30.5em;
+		top: 18em;
+		display:none;
+		width: 12.923em;
+	}
+	.env_map6{
+		left: 32em;
+		top: 11.077em;
+		width: 7.692em;
+	}
+	.env_map6_pop{
+		left: 29em;
+		top: 1.2em;
+		display:none;
+		width: 12.923em;
+	}
+	.env_map7{
+		left: 5.231em;
+		top: 12.538em;
+		width: 6.923em;
+	}
+	.env_map7_pop{
+		left: 0em;
+		top: 2em;
+		display:none;
+		width: 13.923em;
+	}
+	.env_map8{
+		left: 13em;
+		top: 17.2em;
+		width: 5.154em;
+	}
+	.env_map8_pop{
+		left: 5.5em;
+		top: 20.5em;
+		display:none;
+		width: 12.923em;
+	}
+	.env_map9{
+		left: 22.5em;
+		top: 14em;
+		width: 6.538em;
+	}
+	.env_map9_pop{
+		left: 22.5em;
+		top: 4em;
+		display:none;
+		width: 12.923em;
+	}
+	.env_map10{
+		left: 23em;
+		top: 18em;
+		width: 7.692em;
+	}
+	.env_map10_pop{
+		left: 23em;
+		top: 20.6em;
+		display:none;
+		width: 12.923em;
+	}
+
 }
 
 
@@ -370,3 +599,6 @@
 		
 	}
 }
+
+
+
