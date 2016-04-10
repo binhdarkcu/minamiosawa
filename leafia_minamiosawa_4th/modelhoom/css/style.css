@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+	/* section */
+	.section {
+		margin-bottom: 50px;
+	}
+	.section .ttl {
+		margin-bottom: 20px;
+	}
+	.slick-slider {
+		margin-bottom: 10px;
+	}
+	.slider-nav {
+		margin-bottom: 40px;
+	}

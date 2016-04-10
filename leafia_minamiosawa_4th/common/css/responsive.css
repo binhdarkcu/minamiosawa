@@ -473,6 +473,8 @@
 		margin-right: 0;
 		width: 50%;
 		border-bottom: 1px solid #fff;
+        padding: 10px 0;
+        box-sizing: border-box !important;
 	}
 	body #gFooter #fNav ul li.last {
 		border-bottom: none;
@@ -481,7 +483,7 @@
  		display: block;
 		background-color: #dcdcdc;
 		color: #333;
-		padding: 10px;
+		/* padding: 10px; */
 	}
 
 	body #gFooter .btMap {
