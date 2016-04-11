@@ -1,12 +1,25 @@
 @charset "utf-8";
 	
-	.mainSlide{position: relative;}
+	.mainSlide{position: relative;height: 560px;}
 	.mainSlide .bg{
-		background: url(../imgs/toppage/main.png) no-repeat center;
+		background: url(../imgs/toppage/main.png) no-repeat  center;
 		width: 100%;
-		height: 560px;
+		height: 463px;
 		background-size: cover;
 		position: relative;
+		top: 97px;
+	}
+	.marquee-slide{
+		position: absolute;
+		width: 100%;
+		left: 0;
+	}
+	.slidetmp{
+		cursor: pointer;
+		position: absolute;
+		z-index: 100;
+		width: 100%;
+		height: 320px;
 	}
 	.mainSlide .slide{
 		position: absolute;
@@ -16,7 +29,14 @@
 		width: 100%;
 		height: 560px;
 	}
-		
+	.infopikupWrap {
+		position: relative;
+	}
+	.movetop{
+		    position: absolute;
+    right: -100px;
+    top: 36px;
+	}
 	.mainSlide .logo {
 	    position: absolute;
 	    z-index: 10;
@@ -383,6 +403,7 @@ body div.pickup ul.pickupList li img.grayout {
 		.mainSlide .bg{
 			background: url(../imgs/toppage/main-mb.png) no-repeat center;
 			height: 447px;
+			top: 0;
 		}
 		.mainSlide .slide{
 			background: url(../imgs/toppage/slide-mb.png) repeat-x center;
@@ -392,6 +413,14 @@ body div.pickup ul.pickupList li img.grayout {
 		}
 		.capindex span{
 			display: inline;
+		}
+		.movetop{
+			position: relative;
+			float: right;
+			right:0;
+		}
+		.mainSlide{
+			height: 447px;
 		}
 	}
 
