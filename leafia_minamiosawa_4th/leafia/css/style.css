@@ -159,6 +159,7 @@ ul.tabs li.current{
     .leafia #tab-1 .top .mb{
     	margin-bottom:10px;
     }
+    .leafia img.mb{display:inline-block;text-align:center;}
     .leafia #tab-1 .title .mb{
        margin:30px 0;
     }
