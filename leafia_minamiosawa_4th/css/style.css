@@ -6,14 +6,15 @@
 		width: 100%;
 		height: 560px;
 		background-size: cover;
+		position: relative;
 	}
 	.mainSlide .slide{
 		position: absolute;
 		top: 0;
 		left: 0;
-		background: url(../imgs/toppage/slide.png) no-repeat;
+		background: url(../imgs/toppage/slide.png) repeat-x;
 		width: 100%;
-		height: 334px;
+		height: 560px;
 	}
 		
 	.mainSlide .logo {
@@ -384,7 +385,7 @@ body div.pickup ul.pickupList li img.grayout {
 			height: 447px;
 		}
 		.mainSlide .slide{
-			background: url(../imgs/toppage/slide-mb.png) no-repeat center;
+			background: url(../imgs/toppage/slide-mb.png) repeat-x center;
 		}
 		.capindex{
 			padding-top: 40px;
