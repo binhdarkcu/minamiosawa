@@ -158,9 +158,9 @@
 	background-image:url(../imgs/ev/img_yuhodou_map.png);
 	background-repeat:no-repeat;
 	width:100%;
-	height:700px;
+	height: 824px;
 	position:relative;
-	margin-left: -24px;
+	margin-left: -10px;
 }
 .env_map p{
 	position:absolute;
@@ -351,6 +351,66 @@
 	padding-top: 40px;
 	padding-bottom: 50px;
 }
+
+.env_l{
+	float:left;
+	padding: 0 40px 0 0;
+}
+.env_r{
+	float:left;
+}
+.env_table{
+	width: 480px;
+	margin: 0 0 30px;
+}
+.env_table.env05{
+	margin-bottom: 26px;
+}
+.envi5box{
+	margin-top: 60px;
+}
+.env_table.env06{
+	margin-bottom: 26px;
+}
+.env_table th{
+	text-align:center;
+	font-weight:normal;
+	font-size:13px;
+	padding:2px 0;
+}
+.env_table td{
+	border-bottom:1px dotted #cccccc;
+	font-size:12px;
+	padding:0 2px 0 0;
+}
+.env_table td.env_table_distance{
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	text-align:right;
+}
+.env_table td.env_table_minit{
+	text-align:right;
+}
+.env_table .env_th_1{
+	width:260px;
+	border-bottom:1px solid #cccccc;
+	border-top:1px solid #cccccc;
+}
+.env_table .env_th_2{
+	width:77px;
+	border:1px solid #cccccc;
+}
+.env_table .env_th_3{
+	width:66px;
+	border-bottom:1px solid #cccccc;
+	border-top:1px solid #cccccc;
+}
+.env_right_txt{
+	font-size:12px;
+	line-height: 1.2em;
+	margin:0 0 30px;
+	text-align:right;
+	}
 /* @media 600 START */
 @media only screen and (max-width:600px) {
 	.desktop{
@@ -742,6 +802,19 @@
 	}
 	.enviromentPage .wrapp5 .envi5box ul li .box img{
 		width: 100%;
+	}
+	.enviromentPage .envi-map{
+		display: none;
+	}
+	.env_l{
+		width: 100%;
+		padding-right: 0;
+	}
+	.env_table{
+		width: 100%;
+	}
+	.envi5box{
+		margin-top: 40px;
 	}
 }
 
