@@ -28,8 +28,8 @@
       <!-- TweenMax -->
       <script src="common/js/tweenmax.min.js"></script>
       <!-- slick -->
-      <link rel="stylesheet" type="text/css" href="common/slick/slick.css">
-      <link rel="stylesheet" type="text/css" href="common/slick/slick-theme.css">
+      <link rel="stylesheet" type="text/css" href="common/slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="common/slick/slick-theme.css"/>
       <script type="text/javascript" src="common/slick/slick.js"></script>
       <!-- bxslider -->
       <script src="common/bxslider/jquery.bxslider.js"></script>
@@ -40,55 +40,95 @@
               $('.bxslider').bxSlider();
          });
          $(document).ready(function () {
-		    $('.mainSlide .slide').css("background-position","0 0");
-		});
+            $('.mainSlide .slide').css("background-position","0 0");
+        });
 
-		$(document).ready(function () {
-		    //アニメーションスピード
-		    var scrollSpeed = 0.1;
-		    //画像サイズ
-		    var imgWidth = 2765;
-		    //画像の初期位置
-		    var posX = 0;
-          var inter = null;
-		    //ループ処理
-		    inter = setInterval(function(){
-		        //画像のサイズまで移動したら0に戻る。
-		        if (posX >= imgWidth) posX= 0;
-		        //scrollSpeed分移動
-		        posX -= scrollSpeed;
-		        $('.mainSlide .slide').css("background-position",posX+"px 0px");
-		    }, 1);
+        $(document).ready(function () {
+            //アニメーションスピード
+            var scrollSpeed = 0.1;
+            //画像サイズ
+            var imgWidth = 2765;
+            //画像の初期位置
+            var posX = 0;
+            var inter = null;
+            var inter_to_right = null;
+            //ループ処理
+            inter = setInterval(function(){
+                //画像のサイズまで移動したら0に戻る。
+                if (posX >= imgWidth) posX= 0;
+                //scrollSpeed分移動
+                posX -= scrollSpeed;
+                $('.mainSlide .slide').css("background-position",posX+"px 0px");
+            }, 1);
+            function moveToRight(){
+                inter_to_right = setInterval(function(){
+                    //画像のサイズまで移動したら0に戻る。
+                    if (posX >= imgWidth) posX= 0;
+                    //scrollSpeed分移動
+                    posX += scrollSpeed;
+                    $('.mainSlide .slide').css("background-position",posX+"px 0px");
+                }, 1);
+            }
+            var curDown = false;
+             var scrollleft = 5;
+             var direct = 'left';
+             $( ".slidetmp" ).swipe(function( direction, offset ) {
+                if(direction.x == 'right'){
+                   direct = 'right';
+                   clearInterval(inter); 
+                   if (posX >= imgWidth) posX= 0;
+                   //scrollSpeed分移動
+                   posX += scrollleft;
+                   $('.mainSlide .slide').css("background-position",posX+"px 0px");
+                   
+                }else{
+                    direct = 'left';
+                    if (posX >= imgWidth) posX= 0;
+                   //scrollSpeed分移動
+                   clearInterval(inter_to_right); 
+                   posX -= scrollleft;
+                   $('.mainSlide .slide').css("background-position",posX+"px 0px");
+                }
+              });
+              var touchDown = false
+              $( ".slidetmp" ).on( "touchstart mousedown", function ( event ) {
+                touchDown = true;
+                clearInterval(inter); 
+                clearInterval(inter_to_right); 
+              } );
+              
+              $( ".slidetmp" ).on( "touchend mouseup", function () {
+                touchDown = false;
+                var scrollMove= 0.1;
+                if(direct == 'left'){
+                    clearInterval(inter_to_right); 
+                    inter = setInterval(function(){
+                        //画像のサイズまで移動したら0に戻る。
+                        if (posX >= imgWidth) posX= 0;
+                        //scrollSpeed分移動
+                        posX -= scrollMove;
+                        $('.mainSlide .slide').css("background-position",posX+"px 0px");
+                    }, 1);
+                }else{
+                    clearInterval(inter); 
+                    inter_to_right = setInterval(function(){
+                        //画像のサイズまで移動したら0に戻る。
+                        if (posX >= imgWidth) posX= 0;
+                        //scrollSpeed分移動
+                        posX += scrollMove;
+                        $('.mainSlide .slide').css("background-position",posX+"px 0px");
+                    }, 1);
+                }
+                
+              } );
 
-          var curDown = false;
-           $('.slidetmp').mousemove(function(m){
-               //clearInterval(inter); 
-		    });
-           $('.slidetmp').mouseout(function(m){
-             inter = setInterval(function(){
-              //画像のサイズまで移動したら0に戻る。
-              if (posX >= imgWidth) posX= 0;
-                 //scrollSpeed分移動
-                 posX -= scrollSpeed;
-                 $('.mainSlide .slide').css("background-position",posX+"px 0px");
-               }, 1);
-          });
-           var scrollleft = 5;
-           $( ".slidetmp" ).swipe(function( direction, offset ) {
-              if(direction.x == 'right'){
-               if (posX >= imgWidth) posX= 0;
-                 //scrollSpeed分移動
-                 posX += scrollleft;
-                 $('.mainSlide .slide').css("background-position",posX+"px 0px");
-              }else{
-                  if (posX >= imgWidth) posX= 0;
-                 //scrollSpeed分移動
-                 posX -= scrollleft;
-                 $('.mainSlide .slide').css("background-position",posX+"px 0px");
-              }
-            });
-         });
+              $( ".slidetmp" ).on( "touchmove mousemove", function ( event ) {
+                if ( !touchDown ) { return;}
+                //clearInterval(inter); 
+              } );
+           });
       </script>
+      
    </head>
    <body class="base">
       <div class="page" id="pageID01">
