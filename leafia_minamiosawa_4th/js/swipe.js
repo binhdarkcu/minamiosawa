@@ -30,17 +30,21 @@ $(function() {
         x: event.originalEvent.pageX,
         y: event.originalEvent.pageY
       };
+      //console.log('down');
     } );
 
     $el.on( "touchend mouseup", function () {
       touchDown = false;
       originalPosition = null;
+      //console.log('up');
     } );
 
     $el.on( "touchmove mousemove", function ( event ) {
       if ( !touchDown ) { return;}
       var info = swipeInfo( event );
       callback( info.direction, info.offset );
+      //console.log('move');
+      //clearInterval(inter); 
     } );
 
     return true;

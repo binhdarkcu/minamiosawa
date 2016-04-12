@@ -161,6 +161,7 @@
 	height: 824px;
 	position:relative;
 	margin-left: -10px;
+	background-size:contain;
 }
 .env_map p{
 	position:absolute;
@@ -419,6 +420,7 @@
 	.mobile{
 		display: block;
 	}
+
 	.enviromentPage .shiftbutton a{
 		width: 19.1%;
 		float: left;
@@ -816,6 +818,18 @@
 	.envi5box{
 		margin-top: 40px;
 	}
+	.env_tabltitle img{
+		width:100%;
+	}
+  .envi5box .list table{display:none;}
+  .envi5box .list{
+  	width:50%;
+  	margin-bottom:10px;
+  }
+  .env_tabltitle{cursor:pointer;}
+  .tab-show{display:none;}
+  .tab-show.active{display:block;}
+  .tab-show .env_tabltitle{margin-bottom:10px;}
 }
 
 

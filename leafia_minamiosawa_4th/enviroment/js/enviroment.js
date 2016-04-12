@@ -48,4 +48,10 @@ var enviroment = (function() {
 
 $(document).ready( function() {
 	enviroment.init();
+   $('.envi5box .list').click(function(){
+       var id = $(this).attr('data-id');
+       $('.tab-show').removeClass('active');
+       $('#'+id).addClass('active');
+   });
+
 });
