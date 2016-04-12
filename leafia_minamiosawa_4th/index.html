@@ -70,26 +70,34 @@
                 }, 1);
             }
             var curDown = false;
-             var scrollleft = 5;
+             var scrollleft = 2;
              var direct = 'left';
-             $( ".slidetmp" ).swipe(function( direction, offset ) {
-                if(direction.x == 'right'){
-                   direct = 'right';
-                   clearInterval(inter); 
-                   if (posX >= imgWidth) posX= 0;
-                   //scrollSpeed分移動
-                   posX += scrollleft;
-                   $('.mainSlide .slide').css("background-position",posX+"px 0px");
-                   
-                }else{
-                    direct = 'left';
+             
+             $(".slidetmp").swipe( {
+              swipeStatus:function(event, phase, direction, distance, duration, fingers, fingerData, currentDirection)
+              {
+                if(currentDirection == 'left'){
+                  direct = 'left';
                     if (posX >= imgWidth) posX= 0;
                    //scrollSpeed分移動
                    clearInterval(inter_to_right); 
                    posX -= scrollleft;
                    $('.mainSlide .slide').css("background-position",posX+"px 0px");
+                }else{
+                  direct = 'right';
+                   clearInterval(inter); 
+                   if (posX >= imgWidth) posX= 0;
+                   //scrollSpeed分移動
+                   posX += scrollleft;
+                   $('.mainSlide .slide').css("background-position",posX+"px 0px");
                 }
-              });
+              }, 
+              threshold:200,
+              maxTimeThreshold:5000,
+              fingers:'all'
+            });
+
+
               var touchDown = false
               $( ".slidetmp" ).on( "touchstart mousedown", function ( event ) {
                 touchDown = true;
@@ -100,6 +108,7 @@
               $( ".slidetmp" ).on( "touchend mouseup", function () {
                 touchDown = false;
                 var scrollMove= 0.1;
+
                 if(direct == 'left'){
                     clearInterval(inter_to_right); 
                     inter = setInterval(function(){
@@ -124,6 +133,7 @@
 
               $( ".slidetmp" ).on( "touchmove mousemove", function ( event ) {
                 if ( !touchDown ) { return;}
+
                 //clearInterval(inter); 
               } );
            });
