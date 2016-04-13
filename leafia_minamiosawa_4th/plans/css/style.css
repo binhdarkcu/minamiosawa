@@ -522,9 +522,9 @@
 	.selectRoom a.choose{
 		position: absolute;
 		margin-left: 0!important;
-	    margin-top: 0!important;
-	    height: 6%;
-	    width: 14%;
+		margin-top: 0!important;
+		height: 6%;
+		width: 15%;
 	}
 	.selectRoom{
 		max-height: 985px;
@@ -624,6 +624,16 @@
 	}
 	.popup.popup-plan2 .pContent .plan4{
 		padding-top: 10px;
+	}
+	.room{
+		display: none;
+	}
+	#room-4-5, #room-1-1, #room-5-2, #room-7-4,#room-7-6, #room-2-1, #room-5-8, #room-5-9 {
+		display: block;
+	}
+	.selectRoom a.choose:hover{
+		opacity: 0.4;
+		background: #fff;
 	}
 }
 /* @media 600 END */
