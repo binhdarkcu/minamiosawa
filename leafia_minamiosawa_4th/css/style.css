@@ -398,11 +398,12 @@ body div.pickup ul.pickupList li img.grayout {
 		}
 		.mainSlide .bg{
 			background: url(../imgs/toppage/main-mb.png) no-repeat center;
-			height: 447px;
-			top: 0;
+			height:100%;
+			top: 0;background-size:cover;
 		}
 		.mainSlide .slide{
 			background: url(../imgs/toppage/slide-mb.png) repeat-x center;
+			height:447px;
 		}
 		.capindex{
 			padding-top: 40px;
