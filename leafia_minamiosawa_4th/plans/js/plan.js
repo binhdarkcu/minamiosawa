@@ -5,10 +5,10 @@ var planPage = (function() {
 		closePopup();
 		$(window).resize(function(){
 			if($(window).width() <=600){
-				$('.selectRoom .map.mobile').removeAttr('style');
+				//$('.selectRoom .map.mobile').removeAttr('style');
 				$('.selectRoom .map.normal').removeAttr('style');
 			}else{
-				$('.selectRoom .map.mobile').removeAttr('style');
+				//$('.selectRoom .map.mobile').removeAttr('style');
 				$('.selectRoom .map.normal').removeAttr('style');
 			}
 		});
@@ -25,29 +25,28 @@ var planPage = (function() {
 	function openRoom(idDiv){
 		$('.popup').css('display', 'none');
 		$('#' + idDiv).css('display', 'block');
-		var top =$('#' + idDiv).offset().top;
-		console.log(top);
-		$('html, body').animate({
-            scrollTop:top
-        }, 800);
+		var top =$(window).scrollTop();
+		$('#' + idDiv + '.popup').css('top', top-300);
+		
 	}
 	function hoverRoom(idDiv){
 		if($(window).width() > 600){
 			$('.room .r, .selectRoom .map.normal').css('display', 'none');
 		}else{
-			$('.room .r').css('display', 'none');
-			$('.selectRoom .map.mobile').css('opacity', '0');
+			//$('.room .r').css('display', 'none');
+			//$('.selectRoom .map.mobile').css('opacity', '0');
 		}
 		$('#' + idDiv).css('display', 'block');
 	}
 	function outRoom(){
 		$('.selectRoom a.choose').mouseout(function(){
-			$('.room .r').css('display', 'none');
+			
 			if($(window).width() > 600){
+				$('.room .r').css('display', 'none');
 				$('.selectRoom .map.normal').css('display', 'block');
 			}else{
 				$('.selectRoom .map.mobile').css('display', 'block');
-				$('.selectRoom .map.mobile').css('opacity', '1');
+				//$('.selectRoom .map.mobile').css('opacity', '1');
 			}
 			
 		});
