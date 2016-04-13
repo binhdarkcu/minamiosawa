@@ -185,7 +185,7 @@ ul.tabs li.current{
 		margin-top:20px;
 	}
 	#tab-3 .list-col-2 li.first,#tab-3 .list-col-2 li.second{width:100%;}
-    #tab-3 .list-col-2 li.second p{font-size:12px;}
+	#tab-3 .list-col-2 li.second p{font-size:12px;}
 	#tab-3 .bottom{padding-top:15px;}
 
 	#tab-3 .bt-content{padding-top:0px;}
@@ -195,11 +195,118 @@ ul.tabs li.current{
 	}
 	.btn-link{
 		display:block;
+		width: 100%;
 	}
 	.btn-link a{
-       text-align:center;display:inline-block;
+		text-align:center;
+		display:inline-block;
 	}
-   
+    p.caption { font-size: 10px !important; }
+
+div.list-col-4 ul li,
+div.list-col-2 ul li {
+width: 100%;
+height: auto;
+}
+div.list-col-4 ul li.bg1-1 {
+background: url(../imgs/responsive/tab-1-list-1.png) no-repeat;
+background-size: 100%;
+}
+div.list-col-4 ul li.bg1-2 {
+background: url(../imgs/responsive/tab-1-list-2.png) no-repeat;
+background-size: 100%;
+}
+div.list-col-4 ul li.bg1-3 {
+background: url(../imgs/responsive/tab-1-list-3.png) no-repeat;
+background-size: 100%;
+}
+div.list-col-4 ul li.bg1-4 {
+background: url(../imgs/responsive/tab-1-list-4.png) no-repeat;
+background-size: 100%;
+}
+div.list-col-4 ul li p {
+font-size: 12px;
+line-height: 1.3;
+padding: 13% 0 0 34% !important;
+}
+
+div.list-col-2 ul li.bg1-5 {
+background: url(../imgs/responsive/tab-1-list-5.png) no-repeat;
+background-size: 100%;
+}
+div.list-col-2 ul li.bg1-6 {
+background: url(../imgs/responsive/tab-1-list-6.png) no-repeat;
+background-size: 100%;
+}
+div.list-col-2 ul li.bg1-7 {
+background: url(../imgs/responsive/tab-1-list-7.png) no-repeat;
+background-size: 100%;
+}
+div.list-col-2 ul li.bg1-8 {
+background: url(../imgs/responsive/tab-1-list-8.png) no-repeat;
+background-size: 100%;
+}
+div.list-col-2 ul li p {
+font-size: 12px;
+line-height: 1.3;
+padding: 8% 0 0 55% !important;
+}
+
+div.list-col-4 ul li.bg2-1 {
+background: url(../imgs/responsive/tab-2-list-1.png) no-repeat;
+background-size: 100%;
+}
+div.list-col-4 ul li.bg2-2 {
+background: url(../imgs/responsive/tab-2-list-2.png) no-repeat;
+background-size: 100%;
+}
+div.list-col-4 ul li.bg2-3 {
+background: url(../imgs/responsive/tab-2-list-3.png) no-repeat;
+background-size: 100%;
+}
+div.list-col-4 ul li.bg2-4 {
+background: url(../imgs/responsive/tab-2-list-4.png) no-repeat;
+background-size: 100%;
+}
+div.list-col-4 ul li.bg2-4 p a {
+	margin: 0 0 0 -10px !important; 
+	padding: 0 !important;
+	width: 60%;
+	height: auto;
+}
+
+.leafia .box .b-right{
+	width:100%;box-sizing: border-box;
+	padding: 16px 16px 16px 16px;
+	border:1px solid #366E2B;
+}
+.leafia .box .b-right p{
+	font-size:11px;
+	padding-bottom: 0;
+}
+
+div.list-col-4 ul li.bg3-1 {
+background: url(../imgs/responsive/tab-3-list-1.png) no-repeat;
+background-size: 100%;
+}
+div.list-col-4 ul li.bg3-2 {
+background: url(../imgs/responsive/tab-3-list-2.png) no-repeat;
+background-size: 100%;
+}
+div.list-col-4 ul li.bg3-3 {
+background: url(../imgs/responsive/tab-3-list-3.png) no-repeat;
+background-size: 100%;
+}
+div.list-col-4 ul li.bg3-4 {
+background: url(../imgs/responsive/tab-3-list-4.png) no-repeat;
+background-size: 100%;
+}
+div.list-col-2 .second p {
+	padding: 0 !important; 
+	margin: 0 0 20px 0 !important;
+}
+
+
 }
 
 /* @media 600 END */

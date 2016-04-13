@@ -36,7 +36,10 @@
          $(document).ready(function(){
            $('.print').click(function(){
          	$.jPrintArea('.OPEN')
-         });	
+         });
+	$('.overplay').click(function(){
+		$('.popup').hide();
+	});
          });
       </script>
       <script type="text/javascript" src="js/index.js" charset="UTF-8"></script>
@@ -169,7 +172,19 @@
                            <div class="desc">
                               ※掲載の区画図は図面を基に描き起こしたもので、施工上やむを得ず変更する場合がございます。予めご了承ください。
                            </div>
-                           <div class="4box normal">
+                           <div class="box4 normal">
+                              <ul>
+                                 <li onclick="planPage.openRoom('pp-plan4-5')"><a href="javascript:void(0);" class="bnr-room-4-5"></a></li>
+                                  <li onclick="planPage.openRoom('pp-plan1-1')" class="right"><a href="javascript:void(0);" class="bnr-room-1-1"></a></li>
+                                 <li onclick="planPage.openRoom('pp-plan2-1')"><a href="javascript:void(0);" class="bnr-room-2-1"></a></li>
+                                 <li onclick="planPage.openRoom('pp-plan5-2')" class="right"><a href="javascript:void(0);" class="bnr-room-5-2"></a></li>
+                                 <li onclick="planPage.openRoom('pp-plan5-8')"><a href="javascript:void(0);" class="bnr-room-5-8"></a></li>
+                                 <li onclick="planPage.openRoom('pp-plan5-9')" class="right"><a href="javascript:void(0);" class="bnr-room-5-9"></a></li>
+                                 <li onclick="planPage.openRoom('pp-plan7-4')"><a href="javascript:void(0);" class="bnr-room-7-4"></a></li>
+                                 <li onclick="planPage.openRoom('pp-plan7-6')" class="right"><a href="javascript:void(0);" class="bnr-room-7-6"></a></li>
+                              </ul>
+                           </div>
+                           <!-- <div class="4box normal">
                               <ul>
                                  <li><a href="javascript:void(0);" onclick="planPage.openRoom('pp-plan4-5')"><img src="imgs/plan/room-4-5.png"></a></li>
                                  <li class="right"><a href="javascript:void(0);" onclick="planPage.openRoom('pp-plan1-1')"><img src="imgs/plan/room-1-1.png"></a></li>

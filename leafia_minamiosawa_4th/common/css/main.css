@@ -870,3 +870,9 @@ body #CVArea ul li.btRes {
 	body .printNav ul li a:hover {
 		background-color: #999;
 	}
+
+	/* .movetop{
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+	} */

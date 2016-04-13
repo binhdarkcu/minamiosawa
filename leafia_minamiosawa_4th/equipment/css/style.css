@@ -93,6 +93,7 @@ ul.tabs li.current{
 	.equipment .tabs-content #tab-3 p{
 		padding-bottom:20px;
 	}
+    p.caption { font-size: 10px !important; margin: 0; }
 
 }
 /* @media 600 END */

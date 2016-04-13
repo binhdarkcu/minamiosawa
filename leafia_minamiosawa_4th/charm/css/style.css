@@ -1,14 +1,7 @@
 @charset "utf-8";
 .charm-title{
-	display: table;
-	margin: 0 auto;
-	padding-top: 25px;
-	padding-bottom:33px;
-}
-.charm-titleimage{
-	display: table;
-	margin: 0 auto;
-	padding-bottom:33px;
+ padding-top: 25px;
+ padding-bottom:50px;
 }
 .list-col li{
 	float:left;
@@ -38,9 +31,6 @@ li p{
 .map{margin-top:45px;}
 .txt-map{
   margin-top:-50px;padding-left: 20px;
-}
-.txt-map p{
-  padding-left: 10px;
 }
 .btn{
 	padding-top:30px;padding-bottom:40px;
@@ -97,7 +87,7 @@ li p{
 	content:"";
 	padding:15px 9px;
 	position: absolute;
-	right:15px;top:15px;
+	right:15px;top:30%;
 	background:url(../imgs/charm/icon-aco.png) no-repeat center -15px;
 }
 .accordion-section-title.active:after{
@@ -108,15 +98,12 @@ li p{
 	margin-bottom:20px;
 }
 .charmPage p{
-	font-size: 15px;
+	font-size: 16px;
 	color: #231F20;
-}
-.charmPage .title{
-	  display: table;
-	  margin: 0 auto;
 }
 .charmPage .txtright{
 	text-align: right;
+	color: #231F20;
 	font-size: 12px;
 	top: -20px;
 	display: block;
@@ -125,6 +112,11 @@ li p{
 .charmPage .txtright.mb{
    	display: none;
    }
+
+.txt-map p.caption{
+   	font-size:11px;
+   }
+
 /* @media 600 START */
 @media only screen and (max-width:600px) {
 	.mb{display:block;}
@@ -133,14 +125,8 @@ li p{
      margin-top:0;
      padding-left:0;
    }
-   	.txt-map cap{
-   	font-size:12px;
-   }
    .charm-title{
-   	padding-top:35px;padding-bottom:25px;
-   }
-   .charm-titleimage{
-   	padding-bottom:25px;
+   	padding-top:20px;padding-bottom:45px;
    }
    .btn{padding-left:0;}
    #mainContent{
@@ -161,6 +147,10 @@ li p{
    }
    .charmPage .txtright.mb{
    	display: block;
+   }
+
+.txt-map p.caption{
+   	font-size:10px;
    }
 
 }
