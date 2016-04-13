@@ -1,6 +1,14 @@
 <div id="FooterInner">
 <div id="contactArea">
 <div class="wrap">
+<a href="#" class="movetop" style="position:fixed;bottom:10px;right:20px;z-index:99999;"><img src="{$root}common/imgs/top.png"/></a>
+<script type="text/javascript">
+	$('.movetop').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+  });
+
+</script>
 <p class="txt01">当物件に関するお問合せ・ご相談は<br />
 {home_0701_0000}</p>
 <p class="telnum"><a href="tel:{home_0701_0100}"><span class="icon-tel"></span>お電話でのお問い合わせはこちら</a><span class="icon">{home_0701_0100}</span><span class="txt02">営業時間　{home_0701_0200}<br />

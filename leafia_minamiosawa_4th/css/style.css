@@ -32,11 +32,7 @@
 	.infopikupWrap {
 		position: relative;
 	}
-	.movetop{
-		    position: absolute;
-    right: -100px;
-    top: 36px;
-	}
+	
 	.mainSlide .logo {
 	    position: absolute;
 	    z-index: 10;
