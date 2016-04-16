@@ -19,8 +19,6 @@
 }
 .messagePage .text span{
 	display: block;
-	font-size: 12px;
-	color: #030100;
 }
 .messagePage a.btn{
 	display: table;
@@ -63,7 +61,7 @@
 		margin-bottom: 30px;
 	}
 	.messagePage .text span{
-		font-size: 16px;
+		font-size: 12px;
 	}
 	.messagePage .text{
 		padding-left: 8px;

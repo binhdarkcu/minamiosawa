@@ -24,9 +24,12 @@ li.right{
     position: absolute;
     bottom: 24px;left:0;right:0;
 }
+
 .mb{
 	display:none;
 }
+area:focus, *:focus { outline:none; }
+
 /* @media 600 START */
 @media only screen and (max-width:600px) {
 	#mainContent.concept-page{

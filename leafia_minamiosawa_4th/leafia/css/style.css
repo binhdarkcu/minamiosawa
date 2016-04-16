@@ -187,7 +187,14 @@ ul.tabs li.current{
 	#tab-3 .list-col-2 li.first,#tab-3 .list-col-2 li.second{width:100%;}
 	#tab-3 .list-col-2 li.second p{font-size:12px;}
 	#tab-3 .bottom{padding-top:15px;}
-
+    ul.mb.tabs li:hover .ac{
+        display:none;
+   }
+   ul.mb.tabs li .ac{display:none;}
+   ul.mb.tabs li.current .ac{
+        display:block;
+   }
+   ul.mb.tabs li:
 	#tab-3 .bt-content{padding-top:0px;}
 	#tab-3 .box-title-3 p{font-size:12px;}
 	.leafia .tabs-content #tab-3 p{

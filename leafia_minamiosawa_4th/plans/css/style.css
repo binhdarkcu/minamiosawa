@@ -331,7 +331,7 @@
 
 
 	.popup .pContent .p01{
-		padding-top: 60px;
+		padding-top: 20px;
 	}
 	.popup a.close{
 		float: right;
@@ -632,10 +632,10 @@
     	left: 12%;
     	top: 66%;
 	}
-	.selectRoom a.choose.room-5-8{    
+	.selectRoom a.choose.room-5-8{
 	    position: absolute;
 	    left: 45%;
-    	top: 73%;
+	    top: 72%;
 	}
 	.selectRoom a.choose.room-5-9{    
 	    position: absolute;
@@ -653,13 +653,13 @@
 	    top: 84%;
 	    width: 15%;
 	}
-	.selectRoom a.choose.room-2-1{    
+	.selectRoom a.choose.room-2-1{
         position: absolute;
-	    left: 20%;
-	    top: 83%;
-	    width: 12%;
-	    height: 6%;
-	}
+        left: 20%;
+        top: 82%;
+        width: 12%;
+        height: 6%;
+ }
 	.room .mobile{
 		margin: 0;
 	}
@@ -677,7 +677,13 @@
 	.popup.popup-plan2 .pContent .plan4{
 		padding-top: 10px;
 	}
-
+	.selectRoom a.choose:hover{
+		
+		opacity: 0.4;
+	}
+	.room{
+		display: none!important;
+	}
 	
 }
 /* @media 600 END */

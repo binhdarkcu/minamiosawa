@@ -46,7 +46,7 @@ var planPage = (function() {
 				$('.room .r').css('display', 'none');
 				$('.selectRoom .map.normal').css('display', 'block');
 			}else{
-				$('.selectRoom .map.mobile').css('display', 'block');
+				//$('.selectRoom .map.mobile').css('display', 'block');
 				//$('.selectRoom .map.mobile').css('opacity', '1');
 			}
 			

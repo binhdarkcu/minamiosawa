@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	$('ul.tabs li').click(function(e){
+	$('ul.tabs li').bind('click touchstart touchend',function(e){
         e.preventDefault();
 		var tab_id = $(this).attr('data-tab');
 
