@@ -1,0 +1,79 @@
+.keikanPage .hover{
+	display: none;
+}
+.keikanPage .slider-nav .slick-slide{
+	width: 190px!important;
+	margin-right: 12px;
+}
+.keikanPage .slider-nav{
+	margin-top:12px;
+}
+.keikanPage .slider-nav .slick-slide[data-slick-index="4"]{
+	margin-right: 0;
+}
+.keikanPage .slider-nav .slick-slide img{
+
+}
+.keikanPage .slider-nav .slick-current img.display{
+	display: none;
+}
+.keikanPage .slider-nav .slick-current img.hover{
+	display: block;
+}
+.keikanPage .slider-nav .slick-slide:hover img.display{
+	display: none;
+}
+.keikanPage .slider-nav .slick-slide:hover img.hover{
+	display: block;
+}
+.keikanPage .text{
+	font-size: 12px;
+	font-weight: bold;
+	padding: 18px 0 35px;
+}
+ #keikan-page #keikan-wrapper{
+	width: 1000px;
+}
+#keikan-page div#keikan-container{
+	width: 997px;
+	margin: 0 auto;
+}
+.keikanPage .keikan_copy{
+	font-weight: bold;
+}
+.keikanPage .keikan_copy.txt{
+	padding-bottom: 0;
+	font-size: 12px;
+	margin-bottom: 0;
+}
+.keikanPage .keikan_attention.txt{
+	font-weight: bold;
+	padding-top: 0;
+	font-size: 12px;
+}
+.keikanPage .title img{
+	display: table;
+	margin: 40px auto 47px;
+}
+.mobile{
+	display: none;
+}
+@media screen and (max-width: 600px) {
+	.mobile{
+		display: block!important;
+	}
+	.normal{
+		display: none!important;
+	}
+	#keikan-page div#keikan-container, #keikan-page #keikan-wrapper, #map-wrapper{
+		width: 100%;
+	}
+	.keikanPage .slider-nav .slick-slide {
+	    width: 19%!important;
+	    margin-right: 1.2%;
+	}
+	.wrap{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

@@ -1,0 +1,87 @@
+
+.zadankaiPage#map-wrapper{
+	width: 1000px;
+}
+#tabWrap, div#map-container{
+	width: 100%;
+}
+.zadankaiPage h3{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.zadankaiPage .env_list li{
+	width: 230px;
+}
+.zadankaiPage .env_list li img{
+	width: 230px;
+}
+.zadankaiPage .env_list{
+	width: 948px;
+	margin: 0 auto;
+}
+.zadankaiPage .tabContent{
+	    width: 100%;
+    text-align: center;
+}
+.zadankaiPage .tabContent .tabMapWrap{
+    width: 100%;
+    margin-bottom: 0;
+}
+.zadankaiPage .tabContent .tabMapWrap .zadan02_01{
+	margin-left: 30px;
+}
+.mleft17{
+	margin-left: 17px;
+}
+.zadankaiPage .tabBox{
+	width: 100%!important;
+}
+div#keikan-credit{
+	width: 100%;
+}
+.zadankaiPage .img01{
+	padding-top: 32px;
+}
+#tab1{
+	height: 945px;
+}
+#tab2{
+	height: auto;
+}
+.mobile{
+	display: none;
+}
+
+.tab3zadankai301{
+}
+#tab3, #tab4{
+	height: auto;
+}
+@media screen and (max-width: 600px) {
+	.zadankaiPage .env_list, .zadankaiPage#map-wrapper{
+		width: 100%;
+	}
+	div#header, div#map-wrapper, #map-wrapper{
+		width: 100%;
+	}
+	.zadankaiPage .env_list li{
+		width: 23%;
+	}
+	.mobile{
+		display: block;
+	}
+	.normal{
+		display: none;
+	}
+	#tab1{
+		height: auto;
+	}
+	.zadankaiPage .wrap{
+		    padding-left: 20px;
+	    padding-right: 20px;
+	}
+	.nowrap{
+		margin-left: -20px;
+	}
+}

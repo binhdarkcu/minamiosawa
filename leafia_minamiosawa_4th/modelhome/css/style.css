@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+	/* section */
+	.section {
+		margin-bottom: 50px;
+	}
+	.section .ttl {
+		margin-bottom: 20px;
+	}
+	.slick-slider {
+		margin-bottom: 10px;
+	}
+	.slider-nav {
+		margin-bottom: 40px;
+	}
+	.modelhomePage .title img{
+		display: table;
+		margin: 28px auto 38px;
+
+	}
+	.modelhomePage .txt span{
+		display: block;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	.modelhomePage .btn{
+		padding-top: 30px;
+	}
+	.modelhomePage .btn img{
+		display: table;
+		margin: 0 auto;
+	}
+	.mobile{
+		display: none!important;
+	}
+
+	
+		.mobile{
+			display: block!important;
+		}
+		.normal{
+			display: none!important;
+		}
+	}
