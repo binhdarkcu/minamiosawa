@@ -48,12 +48,16 @@
               slidesToScroll: 1,
               asNavFor: '.slider-for',
               dots: false,
-              arrows: false,
               centerMode: true,
               focusOnSelect: true,
               autoplay: true,
               centerPadding: '0'
          
+            });
+            $('.slider-for').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+              var mySlideNumber = nextSlide;
+              $('.slider-nav .slick-slide').removeClass('slick-current');
+              $('.slider-nav .slick-slide').eq(mySlideNumber).addClass('slick-current');
             });
          });
       </script>
@@ -165,7 +169,7 @@
                     </div>
                     <p class="keikan_copy txt">このほか、一部擁壁の化粧型枠の採用や、地盤面の高さの変更の制限等が定められております。詳細は現地係員にお尋ねください。</p>
                     <p class="keikan_attention txt">※掲載の写真は分譲済の街並みを撮影（2013年8月、11月）したものに一部加工を施したもので、実際とは多少異なります。</p>
-                    <p class="btn_close"><a href="JavaScript:window.close()"><img src="images/keikan/btn_close_off.gif" alt="閉じる" width="126" height="30"></a></p>
+                    <p class="btn_close"></p>
               </div>
               </div>
          </div>
