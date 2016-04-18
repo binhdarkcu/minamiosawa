@@ -25,7 +25,8 @@
 <script type="text/javascript" src="../common/js/jquery.js" id="jqueryJS" charset="UTF-8"></script>
 <script type="text/javascript" src="../common/js/util.js" id="utilJS" charset="UTF-8"></script>
 <script type="text/javascript" src="../common/js/main.js" id="mainJS" charset="UTF-8"></script>
-<script type="text/javascript" src="../js/index.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/zadankai.js" id="mainJS" charset="UTF-8"></script>
+
 <!-- <script type="text/javascript" src="../common/parts/parts.js" charset="UTF-8"></script> -->
 <link rel="stylesheet" type="text/css" href="common/stylesheet/print/common.css" media="print" />
 <script type='text/javascript' src='http://www.odakyu-life.com/dlpo/DLPO.js'></script>
@@ -118,15 +119,15 @@
       <img alt="各項目ボタン" src="images/zadankai/zadankai_btn_copy.png">
       <div id="tabWrap" class="clearfix">
          <ul class="env_list">
-            <li><a href="#area1"><img src="images/zadankai/zadankai_btn1_off.png" alt="安心・安全な遊歩道の街" /></a></li>
-            <li><a href="#area2"><img src="images/zadankai/zadankai_btn2_off.png" alt="南大沢駅周辺エリア" /></a></li>
-            <li><a href="#area3"><img src="images/zadankai/zadankai_btn3_off.png" alt="車で5分圏の商業エリア" /></a></li>
-            <li><a href="#area4"><img src="images/zadankai/zadankai_btn4_off.png" alt="自然・公園エリア" /></a></li>
+            <li><a href="#tab1"><img src="images/zadankai/zadankai_btn1_off.png" alt="安心・安全な遊歩道の街" /></a></li>
+            <li><a href="#tab2"><img src="images/zadankai/zadankai_btn2_off.png" alt="南大沢駅周辺エリア" /></a></li>
+            <li><a href="#tab3"><img src="images/zadankai/zadankai_btn3_off.png" alt="車で5分圏の商業エリア" /></a></li>
+            <li><a href="#tab4"><img src="images/zadankai/zadankai_btn4_off.png" alt="自然・公園エリア" /></a></li>
          </ul>
          <div class="wrap">
             <div class="tabContents">
             <!-- 全46区画の美しい街並み -->
-            <div id="tab1" class="tabBox clearfix">
+            <div id="tab1" class="tabBox active clearfix">
                <div class="tabContent clearfix">
                   <div class="tabMapWrap">
                      <a name="area1" id="area1"></a>
@@ -142,8 +143,6 @@
                <!-- .tabContent end -->
             </div>
             <!-- #tab1 end -->
-            <p class="totop mb30 mr40"><a href="#top">このページのTOP▲</a></p>
-            <a name="area2" id="area2"></a>
             <!-- 明るく開かれた外構と四季折々の植栽 -->
             <div id="tab2" class="tabBox clearfix">
                <div class="tabContent clearfix">
@@ -161,8 +160,6 @@
                <!-- .tabContent end -->
             </div>
             <!-- #tab2 end -->
-            <p class="totop mb30 mr40"><a href="#top">このページのTOP▲</a></p>
-            <a name="area3" id="area3"></a>
             <!-- 印象的なコーナーウォールで南国風な設え -->
             <div id="tab3" class="tabBox clearfix">
                <div class="tabContent clearfix">
@@ -186,8 +183,6 @@
                <!-- .tabContent end -->
             </div>
             <!-- #tab3 end -->
-            <p class="totop mb30 mr40"><a href="#top">このページのTOP▲</a></p>
-            <a name="area4" id="area4"></a>
             <!-- 広い道路で街並みにゆとりと住み心地を -->
             <div id="tab4" class="tabBox clearfix">
                <div class="tabContent clearfix">
@@ -207,19 +202,18 @@
                         <img src="images/zadankai/zadankai_4_image04-mb.png" alt="4.コメント４"  />
                      </div>
                   </div>
-                  <!-- #tab4 end -->
-                  <p class="totop mb30 mr40"><a href="#top">このページのTOP▲</a></p>
-                  <ul class="env_list">
-                     <li><a href="#area1"><img src="images/zadankai/zadankai_btn1_off.png" alt="安心・安全な遊歩道の街" /></a></li>
-                     <li><a href="#area2"><img src="images/zadankai/zadankai_btn2_off.png" alt="南大沢駅周辺エリア" /></a></li>
-                     <li><a href="#area3"><img src="images/zadankai/zadankai_btn3_off.png" alt="車で5分圏の商業エリア" /></a></li>
-                     <li><a href="#area4"><img src="images/zadankai/zadankai_btn4_off.png" alt="自然・公園エリア" /></a></li>
-                  </ul>
+                  
                </div>
                <!-- .tabContents end -->
             </div>
-            <p class="btn_close"><a href="JavaScript:window.close()"><img src="images/keikan/btn_close_off.gif" alt="閉じる" width="126" height="30"></a></p>
-            
+            <p class="btn_close"></p>
+            <!-- #tab4 end -->
+            <ul class="env_list bottom">
+               <li><a href="#tab1"><img src="images/zadankai/zadankai_btn1_off.png" alt="安心・安全な遊歩道の街" /></a></li>
+               <li><a href="#tab2"><img src="images/zadankai/zadankai_btn2_off.png" alt="南大沢駅周辺エリア" /></a></li>
+               <li><a href="#tab3"><img src="images/zadankai/zadankai_btn3_off.png" alt="車で5分圏の商業エリア" /></a></li>
+               <li><a href="#tab4"><img src="images/zadankai/zadankai_btn4_off.png" alt="自然・公園エリア" /></a></li>
+            </ul>
          </div>
          
       </div>

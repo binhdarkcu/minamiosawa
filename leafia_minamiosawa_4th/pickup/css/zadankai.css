@@ -58,6 +58,15 @@ div#keikan-credit{
 #tab3, #tab4{
 	height: auto;
 }
+.zadankaiPage .tabBox{
+	display: none;
+}
+.zadankaiPage .tabBox.active{
+	display: block;
+}
+.zadankaiPage .env_list.bottom{
+	padding-top: 30px;
+}
 @media screen and (max-width: 600px) {
 	.zadankaiPage .env_list, .zadankaiPage#map-wrapper{
 		width: 100%;
